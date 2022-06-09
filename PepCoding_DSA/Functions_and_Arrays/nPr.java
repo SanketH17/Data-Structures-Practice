@@ -14,6 +14,7 @@ public class nPr {
         int npr = nfact / nmfact ;
 
         display(n, r, npr);
+        sc.close();
     }
 
     public static int fact(int n){
