@@ -1,91 +1,124 @@
 package PepCoding_DSA.Arrays_2D;
 
 import java.util.Scanner;
-import java.util.*;
+
 
 public class ShellRotate {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int m = sc.nextInt();
-        int[][] arr = new int[n][m];
-        for(int i = 0; i < arr.length; i++){
-            for(int j = 0; j < arr[0].length; j++){
-                arr[i][j] = sc.nextInt();
-            }
-        }
-        
-        int s = sc.nextInt();
-        int r = sc.nextInt();
 
-        rotateShell(arr, s, r);
-        display(arr);
-        sc.close();
+    public static void main(String[] args) throws Exception {
+      Scanner scn = new Scanner(System.in);
+      int n = scn.nextInt();
+      int m = scn.nextInt();
+  
+      int[][] arr = new int[n][m];
+      for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+          arr[i][j] = scn.nextInt();
+        }
+      }
+  
+      int s = scn.nextInt();
+      int r = scn.nextInt();
+  
+      rotateShell(arr, s, r);
+      display(arr);
+      scn.close();
     }
-
-    public static void rotateShell(int[][] arr, int s, int r){
-        int[] oned = fillOnedFromShell(arr,s);
-        rotate(oned, r);
-        fillShellFromOned(arr, s, oned);
+  
+    public static void rotateShell(int[][] arr, int s, int r) {
+      int[] oned = fillOnedFromShell(arr, s);
+      rotate(oned, r);
+      fillShellFromOned(arr, s, oned);
     }
-
-    public static void fillOnedFromShell(int[][] arr, int s, int r){
-        int minr = s - 1;
-        int minc = s -1;
-        int maxr = arr.length - 1;
-        int maxc = arr[0].length - 1;
-
-        int size = 2 * (maxr - minr + maxc - minc);
-
-        int[] oned = new int[size];
-
-        //lw
-        for(int i = minr, j = minc; i <= maxr; i++){
-
-        }
-
-        //bw
-        for(int i = maxr, j = minc; j <= maxc; j++){
-
-        }
-
-        //rw
-        for(int i = maxr, j = maxc; i >= minr; i--){
-
-        }
-
-        //tw
-        for(int i = minr, j = minc; i <= maxr; i++){
-
-        }
-
-
+  
+    public static void rotate(int[] oned, int r) {
+      r = r % oned.length;
+      if (r < 0) {
+        r += oned.length;
+      }
+  
+      reverse(oned, 0, oned.length - r - 1);
+      reverse(oned, oned.length - r, oned.length - 1);
+      reverse(oned, 0, oned.length - 1);
     }
-
-    public static void rotate(int[] a, int r){
-        r = r % a.length;
-        if(r < 0){
-            r = r + a.length;
-        }
-        
-        for(int i = 0; i < a.length; i++){
-            int newIndex = (i + r) % a.length;
-            a[newIndex] = a[i];
-        }
+  
+    public static void reverse(int[] arr, int i, int j) {
+      while (i < j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+      }
     }
-
-
-
-
-
-
-    public static void display(int[][] a){
-        for(int i = 0; i < a.length; i++){
-            for(int j = 0; j < a[0].length; j++){
-                System.out.print(a[i][j] + " ");
-            }
-            System.out.println();
-        }
+  
+    public static int[] fillOnedFromShell(int[][] arr, int s) {
+      int minr = s - 1;
+      int minc = s - 1;
+      int maxr = arr.length - s;
+      int maxc = arr[0].length - s;
+      int size = 2 * (maxr - minr) + 2 * (maxc - minc);
+      int[] oned = new int[size];
+  
+      int index = 0;
+      for (int i = minr, j = minc; i <= maxr; i++) {
+        oned[index] = arr[i][j];
+        index++;
+      }
+  
+      for (int i = maxr, j = minc + 1; j <= maxc; j++) {
+        oned[index] = arr[i][j];
+        index++;
+      }
+  
+      for (int i = maxr - 1, j = maxc; i >= minr; i--) {
+        oned[index] = arr[i][j];
+        index++;
+      }
+  
+      for (int i = minr, j = maxc - 1; j > minc; j--) {
+        oned[index] = arr[i][j];
+        index++;
+      }
+  
+      return oned;
     }
-
-}
+  
+    public static void fillShellFromOned(int[][] arr, int s, int[] oned) {
+      int minr = s - 1;
+      int minc = s - 1;
+      int maxr = arr.length - s;
+      int maxc = arr[0].length - s;
+  
+      int index = 0;
+      for (int i = minr, j = minc; i <= maxr; i++) {
+        arr[i][j] = oned[index];
+        index++;
+      }
+  
+      for (int i = maxr, j = minc + 1; j <= maxc; j++) {
+        arr[i][j] = oned[index];
+        index++;
+      }
+  
+      for (int i = maxr - 1, j = maxc; i >= minr; i--) {
+        arr[i][j] = oned[index];
+        index++;
+      }
+  
+      for (int i = minr, j = maxc - 1; j > minc; j--) {
+        arr[i][j] = oned[index];
+        index++;
+      }
+    }
+  
+    public static void display(int[][] arr) {
+      for (int i = 0; i < arr.length; i++) {
+        for (int j = 0; j < arr[0].length; j++) {
+          System.out.print(arr[i][j] + " ");
+        }
+        System.out.println();
+      }
+    }
+  
+  }
