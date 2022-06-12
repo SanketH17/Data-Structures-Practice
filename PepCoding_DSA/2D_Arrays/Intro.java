@@ -1,8 +1,7 @@
-package PepCoding_DSA.2_2D_Arrays;
 
 import java.util.*;
 
-public class P1_Intro {
+public class Intro {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -25,5 +24,7 @@ public class P1_Intro {
         }
 
         sc.close();
-    }
 }
+}
+
+/* 2D arrays */ */
