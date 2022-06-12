@@ -25,6 +25,7 @@ public class MatrixMultiplication {
 
         if(c1 != r2){
             System.out.println("Invalid input");
+            sc.close();
             return;
         }
 
@@ -58,7 +59,7 @@ public class MatrixMultiplication {
 
 
         
-
+sc.close();
 
 
     }
