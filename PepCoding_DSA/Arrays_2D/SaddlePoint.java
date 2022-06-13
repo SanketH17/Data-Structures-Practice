@@ -11,6 +11,7 @@ public class SaddlePoint {
             for(int j = 0; j < arr[0].length; j++){
                 arr[i][j] = sc.nextInt();
             }
+            sc.close();
         }
 
         /*Per row hume minimum chahiye hoga
@@ -40,7 +41,7 @@ public class SaddlePoint {
         }
 
         System.out.println("Invalid input");
-        sc.close();
+        
 
     }
 }
