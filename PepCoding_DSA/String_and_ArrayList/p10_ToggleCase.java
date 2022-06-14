@@ -2,6 +2,13 @@ package PepCoding_DSA.String_and_ArrayList;
 
 import java.util.*;
 
+
+/*
+ 
+i/p : sanket
+o/p : SANKET
+
+ */
 public class p10_ToggleCase {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
