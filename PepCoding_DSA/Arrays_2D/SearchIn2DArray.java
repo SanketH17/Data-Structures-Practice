@@ -14,8 +14,9 @@ public class SearchIn2DArray {
             
         }
 
+
         int x =  sc.nextInt();
-        
+        sc.close();
         int i = 0;
         int j = arr[0].length - 1; // top right corner
 
@@ -33,6 +34,7 @@ public class SearchIn2DArray {
         }
 
         System.out.println("not found");
+        
         
     }
 }
