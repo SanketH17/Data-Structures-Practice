@@ -1,0 +1,27 @@
+Strings in Java are Objects that are backed internally by a char array. 
+Since arrays are immutable(cannot grow), Strings are immutable as well. 
+Whenever a change to a String is made, an entirely new String is created. 
+
+String s="welcome";  
+
+Immutable String in Java
+A String is an unavoidable type of variable while writing any application program. 
+String references are used to store various attributes like username, password, etc. 
+In Java, String objects are immutable. Immutable simply means unmodifiable or unchangeable.
+
+Once String object is created its data or state can't be changed but a new String object is created.
+
+String s1 = "hello";
+String s2 = "hello"; // interning will happen between s1 and s2
+String s3 = new String("hello");
+
+for comparison dont use == 
+(s1 == s2) //true
+(s1 == s3) // false
+== compares addresses of two strings
+
+use 'Equals'
+Equals checks first addresses of two strings and if
+they are not equal then compares cha by char
+s1.equals(s2) //true 
+s1.equals(s3) //true
