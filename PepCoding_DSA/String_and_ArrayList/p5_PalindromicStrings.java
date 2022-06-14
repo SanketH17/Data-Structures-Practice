@@ -2,6 +2,41 @@ package PepCoding_DSA.String_and_ArrayList;
 
 import java.util.*;
 
+/*
+
+Str = abccbc
+
+ss = 
+a (Palindrome)
+ab 
+abc
+abcc
+abccb
+abccbc
+
+b (Palindrome)
+bc
+bcc
+bccb (Palindrome)
+bccbc
+
+c (Palindrome)
+cc (Palindrome)
+ccb
+ccbc
+
+c (Palindrome)
+cb
+cbc (Palindrome)
+
+b (Palindrome)
+bc
+
+c (Palindrome)
+
+
+ */
+
 public class p5_PalindromicStrings {
 
     public static boolean isPalindrome(String s){
