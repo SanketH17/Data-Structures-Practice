@@ -1,7 +1,15 @@
 package PepCoding_DSA.String_and_ArrayList;
 
 import java.util.*;
+/*
+ 
+str = aaabbcccd
 
+o/p : 
+abcd
+a3b2c3d
+
+ */
 public class p7_StringCompression {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
