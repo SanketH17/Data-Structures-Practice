@@ -1,1 +1,4 @@
-Hell0
+Apke pass koi bhi function frame stack wali memory mein se remove ho raha hai
+only because of two reasons :
+1) we got a return statement
+2) function has completed all of its work (executed all lines of code)
