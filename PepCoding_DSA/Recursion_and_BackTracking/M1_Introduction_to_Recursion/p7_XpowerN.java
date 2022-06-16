@@ -1,7 +1,7 @@
 package PepCoding_DSA.Recursion_and_BackTracking.M1_Introduction_to_Recursion;
 
 /*
-This is logarithmic solution to X power n question
+This is logarithmic solution to X power n question.
  */
 
 import java.util.*;;
