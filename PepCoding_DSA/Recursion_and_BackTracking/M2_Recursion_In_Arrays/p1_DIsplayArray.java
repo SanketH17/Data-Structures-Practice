@@ -1,5 +1,7 @@
 package PepCoding_DSA.Recursion_and_BackTracking.M2_Recursion_In_Arrays;
-
+/*
+Display an array using recursion 
+*/
 
 import java.util.*;
 
