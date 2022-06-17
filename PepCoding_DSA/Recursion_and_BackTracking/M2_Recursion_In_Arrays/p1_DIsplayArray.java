@@ -3,7 +3,7 @@ package PepCoding_DSA.Recursion_and_BackTracking.M2_Recursion_In_Arrays;
 
 import java.util.*;
 
-public class DIsplayArray {
+public class p1_DIsplayArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
