@@ -19,7 +19,8 @@ public class p2_ReverseArray {
         sc.close();
     }
 
-
+    // Expectation - last index se start tk sab print kar de
+    // Faith - last index se index + 1 tk print karna janta hai
     public static void displayArrReverse(int[] arr, int index){
 
         if(index == arr.length){
