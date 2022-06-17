@@ -1,5 +1,16 @@
 package PepCoding_DSA.Recursion_and_BackTracking.M2_Recursion_In_Arrays;
 
+
+/*
+
+Expectation: Our expectation is clear, to find the maximum element inside the array.
+
+Faith: The faith that we can establish is that our function will be able to find the maximum value from index 1 to the end of the array 
+       i.e. the smaller array. 
+
+ */
+
+
 import java.util.*;
 
 public class p3_MaximumInArray {
