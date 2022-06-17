@@ -1,5 +1,24 @@
 package PepCoding_DSA.Recursion_and_BackTracking.M2_Recursion_In_Arrays;
 
+
+
+
+/*
+
+High-Level thinking
+
+Expectation: Our expectation is to get the first index of occurrence of a particular element in the array.
+
+Faith:    We have a faith that recursion can solve the smaller version of the same problem. 
+          We expect that recursion should give us the first index of occurrence of a particular value when we pass a smaller array 
+          i.e. firstIndex(arr,1,data). So, this should give us the first index of occurrence of a particular value from 1 to array.length-1.
+
+
+ */
+
+
+
+
 import java.util.Scanner;
 
 public class p4_first_index_of_occurrence {
@@ -26,7 +45,7 @@ public class p4_first_index_of_occurrence {
             return -1;
         }
 
-        
+
         if(arr[index] == x){
             return index;
         }
