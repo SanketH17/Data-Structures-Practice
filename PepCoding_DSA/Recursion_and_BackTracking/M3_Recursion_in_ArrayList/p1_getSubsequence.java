@@ -21,7 +21,7 @@ public class p1_getSubsequence {
 
         if(str.length() == 0){
             ArrayList<String> bres = new ArrayList<>();
-            bres.add("");
+            bres.add(""); //bres = blank result
             return bres;
         }
         char ch = str.charAt(0); // a
