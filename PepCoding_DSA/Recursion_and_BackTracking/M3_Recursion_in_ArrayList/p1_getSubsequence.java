@@ -1,6 +1,23 @@
 package PepCoding_DSA.Recursion_and_BackTracking.M3_Recursion_in_ArrayList;
 
 
+/*
+
+input : str - > abc 
+
+subsequences : 
+_ _ _
+_ _ c
+_ b _ 
+_ b c
+a _ _ 
+a _ c
+a b _
+a b c
+
+ */
+
+
 import java.util.*;
 
 public class p1_getSubsequence {
