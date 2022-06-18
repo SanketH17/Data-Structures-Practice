@@ -32,6 +32,8 @@ public class p1_getSubsequence {
     }
 
 
+    // Faith : bc -> [--, -c, b-, bc]
+    // Exp : abc -> [---, --c, -b-, -bc, a--, a-c, ab-, abc]
     public static ArrayList<String> gss(String str){
 
         // eg. str = abc
@@ -43,7 +45,7 @@ public class p1_getSubsequence {
         }
         char ch = str.charAt(0); // a
         String ros = str.substring(1); // bc, ros -> rest of the string
-        ArrayList<String> rres = gss(ros); // rres -> recursion result
+        ArrayList<String> rres = gss(ros); // rres -> recursion result => bc -> [--, -c, b-, bc]
 
 
         ArrayList<String> mres = new ArrayList<>(); // mres -> my result
