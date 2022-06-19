@@ -30,11 +30,12 @@ public class p2_GetKeypadCombination {
             return bres;
         }
 
-        char ch = str.charAt(0);
-        String ros = str.substring(1);
-        ArrayList<String> rres = getKPC(ros);
+        // str : 678
+        char ch = str.charAt(0); // 6
+        String ros = str.substring(1); // 78
+        ArrayList<String> rres = getKPC(ros); // 6 words of 78
 
-        ArrayList<String> mres = new ArrayList<>();
+        ArrayList<String> mres = new ArrayList<>(); // 24 words of 678
 
         String codeforch = codes[ch - '0'];
 
