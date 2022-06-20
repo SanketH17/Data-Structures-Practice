@@ -1,7 +1,10 @@
 package PepCoding_DSA.Functions_and_Arrays;
 
 import java.util.Scanner;
-
+/*
+input : 
+output : 
+ */
 public class AnyBaseAddition {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
