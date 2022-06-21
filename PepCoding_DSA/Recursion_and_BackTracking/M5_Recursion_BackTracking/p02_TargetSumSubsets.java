@@ -13,6 +13,9 @@ input :
 70
 
 output : 
+10, 20, 40,  
+ 20, 50,  
+ 30, 40,  
  */
 
 import java.util.*;
@@ -46,7 +49,7 @@ public class p02_TargetSumSubsets {
             return;
         }
 
-        printTargetSumSubsets(arr, idx + 1, set + arr[idx], sos + arr[idx], tar);
+        printTargetSumSubsets(arr, idx + 1, set + arr[idx] + ", ", sos + arr[idx], tar);
         printTargetSumSubsets(arr, idx + 1, set, sos, tar);
 
     }
