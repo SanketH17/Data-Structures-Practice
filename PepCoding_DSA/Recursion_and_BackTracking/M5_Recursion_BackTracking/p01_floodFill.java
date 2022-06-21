@@ -50,7 +50,8 @@ public class p01_floodFill {
         floodfill(maze, sr, sc - 1, asf + "l", visited);
         floodfill(maze, sr + 1, sc, asf + "d", visited);
         floodfill(maze, sr, sc + 1, asf + "r", visited);
-        visited[sr][sc] = false;
+        visited[sr][sc] = false; // during coming back from the recursion we have to remove the marked value that is true to false
+        
 
 
 
