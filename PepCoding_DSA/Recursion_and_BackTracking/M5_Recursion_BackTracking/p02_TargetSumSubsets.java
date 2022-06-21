@@ -14,8 +14,8 @@ input :
 
 output : 
 10, 20, 40,  
- 20, 50,  
- 30, 40,  
+20, 50,  
+30, 40,  
  */
 
 import java.util.*;
@@ -39,12 +39,12 @@ public class p02_TargetSumSubsets {
      sos is sum of subset
      tar is target
      */
-    public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
+    public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) { // levels generally come in form of parameters and options come in form of loops or cols
         
 
         if(idx == arr.length){
             if(sos == tar){
-                System.out.println(" " + set + " ");
+                System.out.println(set + " ");
             }
             return;
         }
