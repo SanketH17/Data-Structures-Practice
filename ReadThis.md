@@ -1,1 +1,3 @@
-# **Hello This repository is all about problems of data structures**
+# **This repository is all about problems related to data structures and algorithms**
+___
+                        
