@@ -1,5 +1,25 @@
 package PepCoding_DSA.M7_Time_and_Space_Complexity;
 
+/*
+input : 
+5
+1 2 3 4 5
+6
+5 10 15 20 25 30
+
+output :
+1
+2
+3
+4
+5
+5
+10
+15
+20
+25
+30
+ */
 
 import java.util.*;
 public class p04_MergeSortedArrays {
