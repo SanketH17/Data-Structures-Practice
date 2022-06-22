@@ -20,7 +20,7 @@ public class p03_InsertionSort {
     public static void InsertionSort(int[] arr) {
         for(int i = 1; i < arr.length; i++){
             for(int j = i - 1; j >= 0; j--){
-                if(isGreater(arr, j, j+1) == true){
+                if(isGreater(arr, j, j+1) == true){ // if arr[j] is greater than arr[j+1] then swap 
                     swap(arr, j, j+1);
                     print(arr);
                 }
