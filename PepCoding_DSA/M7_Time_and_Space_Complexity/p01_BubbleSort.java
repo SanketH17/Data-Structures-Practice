@@ -30,7 +30,7 @@ public class p01_BubbleSort {
             arr[i] = sc.nextInt();
         }
         bubbleSort(arr);
-        print(arr);
+        print(arr); // printing the array
 
         sc.close();
     
