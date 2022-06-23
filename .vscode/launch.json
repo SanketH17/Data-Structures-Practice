@@ -1,0 +1,609 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseAddition",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.AnyBaseAddition",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseMultiplication",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.AnyBaseMultiplication",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseSubstraction",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.AnyBaseSubstraction",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseToAnyBase",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.AnyBaseToAnyBase",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch AnyBaseToDecimal",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.AnyBaseToDecimal",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArraySwap",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.ArraySwap",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch BarChart",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.BarChart",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch BinarySearch",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.BinarySearch",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch CeilandFloor",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.CeilandFloor",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DecimalToAnyBase",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.DecimalToAnyBase",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DifferenceOfTwoArrays",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.DifferenceOfTwoArrays",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch DigitsFreq",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.DigitsFreq",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindElementInArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.FindElementInArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch FirstAndLastIndex",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.FirstAndLastIndex",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch InverseOfAnArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.InverseOfAnArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.ReverseArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateAnArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.RotateAnArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpanOfArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.SpanOfArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SubArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.SubArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfTwoArrays",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.SumOfTwoArrays",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch nPr",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M3_Functions_and_Arrays.nPr",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ExitPointOfMatrix",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.ExitPointOfMatrix",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Intro",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.Intro",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch MatrixMultiplication",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.MatrixMultiplication",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrintUpperTriangle",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.PrintUpperTriangle",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch RotateMatrix90ByDigrees",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.RotateMatrix90ByDigrees",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SaddlePoint",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.SaddlePoint",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchIn2DArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.SearchIn2DArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ShellRotate",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.ShellRotate",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpiralTraversal",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.SpiralTraversal",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch WaveTraversal",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M4_Arrays_2D.WaveTraversal",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p10_ToggleCase",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p10_ToggleCase",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p11_ASCII_Difference",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p11_ASCII_Difference",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p12_StringPermutations",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p12_StringPermutations",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p1_Introduction",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p1_Introduction",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p2_Substring",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p2_Substring",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p3_AddStrings",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p3_AddStrings",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p4_Split",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p4_Split",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p5_PalindromicStrings",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p5_PalindromicStrings",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p6_StringBuilder",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p6_StringBuilder",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p7_StringCompression",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p7_StringCompression",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p8_ArrayList",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p8_ArrayList",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p9_RemovePrimesFromAList",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M5_String_and_ArrayList.p9_RemovePrimesFromAList",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p1_IntroRecursion",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p1_IntroRecursion",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p2_CoinTossPermutations",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p2_CoinTossPermutations",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p3_ClimbingStairCases",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p3_ClimbingStairCases",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p4_StringPermutations",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p4_StringPermutations",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p5_Factorial",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p5_Factorial",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p6_XpowerN",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p6_XpowerN",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p7_XpowerN",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p7_XpowerN",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p8_PrintZigZag",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p8_PrintZigZag",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p9_TOH",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M1_Introduction_to_Recursion.p9_TOH",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p1_DIsplayArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M2_Recursion_In_Arrays.p1_DIsplayArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p2_ReverseArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M2_Recursion_In_Arrays.p2_ReverseArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p3_MaximumInArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M2_Recursion_In_Arrays.p3_MaximumInArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p4_first_index_of_occurrence",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M2_Recursion_In_Arrays.p4_first_index_of_occurrence",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p5_last_index_of_occurrence",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M2_Recursion_In_Arrays.p5_last_index_of_occurrence",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p6_All_indices_in_array",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M2_Recursion_In_Arrays.p6_All_indices_in_array",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p1_getSubsequence",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M3_Recursion_in_ArrayList.p1_getSubsequence",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p2_GetKeypadCombination",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M3_Recursion_in_ArrayList.p2_GetKeypadCombination",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p3_GetStairsPath",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M3_Recursion_in_ArrayList.p3_GetStairsPath",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p4_GetMazePaths",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M3_Recursion_in_ArrayList.p4_GetMazePaths",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p5_GetMazePathsWithJumps",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M3_Recursion_in_ArrayList.p5_GetMazePathsWithJumps",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p1_PrintSubstrings",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p1_PrintSubstrings",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p2_KPC",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p2_KPC",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p3_printStairsPaths",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p3_printStairsPaths",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p4_MazePaths",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p4_MazePaths",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p5_MazePaths_withJumps",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p5_MazePaths_withJumps",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p6_PrintPermutations",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p6_PrintPermutations",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p8_PrintEncodings",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M4_Recursion_on_the_way_up.p8_PrintEncodings",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p01_floodFill",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M5_Recursion_BackTracking.p01_floodFill",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p02_TargetSumSubsets",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M5_Recursion_BackTracking.p02_TargetSumSubsets",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p03_NQueen",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M5_Recursion_BackTracking.p03_NQueen",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p04_KnightTour",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M6_Recursion_and_BackTracking.M5_Recursion_BackTracking.p04_KnightTour",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p01_BubbleSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p01_BubbleSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p02_SelectionSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p02_SelectionSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p03_InsertionSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p03_InsertionSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p04_MergeSortedArrays",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p04_MergeSortedArrays",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p05_MergeSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p05_MergeSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p06_PartioningAnArray",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p06_PartioningAnArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p06_QuickSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p06_QuickSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p07_QuickSelect",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p07_QuickSelect",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p08_CountSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p08_CountSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p09_RadixSort",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p09_RadixSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p10_SortDates",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p10_SortDates",
+            "projectName": "DSA World_e577409a"
+        }
+    ]
+}
