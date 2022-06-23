@@ -31,6 +31,7 @@ public class p11_Sort01 {
     }
 
     public static void swap(int arr[], int i, int j) {
+        System.out.println("Swapping " + arr[i] + " & " + arr[j]);
         int temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;
