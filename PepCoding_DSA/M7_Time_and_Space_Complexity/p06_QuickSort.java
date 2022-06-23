@@ -30,7 +30,9 @@ public class p06_QuickSort {
 
     }
 
-
+        // 0 to j - 1 -->   <= pivot
+        // j to i - 1 -->   > pivot
+        // i to end   -->   unknown
     public static int partition(int[] arr, int pivot, int lo, int hi) {
         System.out.println("pivot -> " + pivot);
         int i = lo, j = lo;
