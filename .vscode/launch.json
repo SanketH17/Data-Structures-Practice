@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch p11_Sort01",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p11_Sort01",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
