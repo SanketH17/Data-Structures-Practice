@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch p13_TargetSumPair",
+            "request": "launch",
+            "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p13_TargetSumPair",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p06_PartioningAnArray",
+            "request": "launch",
+            "mainClass": "p06_PartioningAnArray",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p13_TargetSumPair",
+            "request": "launch",
+            "mainClass": "p13_TargetSumPair",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
             "name": "Launch hello",
             "request": "launch",
             "mainClass": "hello",
