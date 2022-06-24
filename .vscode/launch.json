@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch hello",
+            "request": "launch",
+            "mainClass": "hello",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p01_Fibonacci",
+            "request": "launch",
+            "mainClass": "p01_Fibonacci",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
             "name": "Launch p12_Sort012",
             "request": "launch",
             "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p12_Sort012",
