@@ -1,28 +1,25 @@
-package PepCoding_DSA.M7_Time_and_Space_Complexity;
+
+
 
 /*
 input : 
-5
-1 2 3 4 5
-6
-5 10 15 20 25 30
-
-output :
-1
-2
-3
-4
-5
-5
 10
+4 9 2 8 6 3 15 63 25 50
+output : 
+2
+4
+9
+6
+8
+3
 15
-20
+63
 25
-30
+50
  */
 
 import java.util.*;
-public class p04_MergeSortedArrays {
+public class p05_MergeSort {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -31,16 +28,22 @@ public class p04_MergeSortedArrays {
             a[i] = sc.nextInt();
         }
 
-        int m = sc.nextInt();
-        int[] b = new int[m];
-        for(int i = 0; i < b.length; i++){
-            b[i] = sc.nextInt();
+        int[] res = mergeSort(a, 0, a.length-1);
+        print(res);
+        sc.close();
+    }
+    public static int[] mergeSort(int[] arr, int low, int high) {
+        if(low == high){
+            int[] ba = new int[1];
+            ba[0] = arr[low];
+            return ba;
         }
 
-        int[] mergedArray = mergeTwoSortedArrays(a, b);
-        print(mergedArray);
-        sc.close();
-
+        int mid = (low + high) / 2;
+        int[] f = mergeSort(arr, low, mid);
+        int[] s = mergeSort(arr, mid + 1, high);
+        int[] fs = mergeTwoSortedArrays(f, s);
+        return fs;
     }
 
     public static int[] mergeTwoSortedArrays(int[] a, int[] b) {
@@ -76,6 +79,8 @@ public class p04_MergeSortedArrays {
         return res;
 
     }
+
+    
 
     public static void print(int[] arr) {
 

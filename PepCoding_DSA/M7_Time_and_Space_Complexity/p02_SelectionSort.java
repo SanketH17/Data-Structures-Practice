@@ -1,4 +1,4 @@
-package PepCoding_DSA.M7_Time_and_Space_Complexity;
+
 
 /*
 Initialize minimum value(min_idx) to location 0

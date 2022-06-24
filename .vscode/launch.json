@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch p14_PivotElement",
+            "request": "launch",
+            "mainClass": "p14_PivotElement",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
+            "name": "Launch p01_BubbleSort",
+            "request": "launch",
+            "mainClass": "p01_BubbleSort",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
             "name": "Launch p13_TargetSumPair",
             "request": "launch",
             "mainClass": "PepCoding_DSA.M7_Time_and_Space_Complexity.p13_TargetSumPair",

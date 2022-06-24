@@ -1,3 +1,0 @@
-We are always have two kind of memories
-1) Stack
-2) Heap
