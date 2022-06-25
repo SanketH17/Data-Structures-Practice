@@ -1,4 +1,23 @@
 
+/*
+
+STORAGE & MEANING
+It's fairly simple. We make an array for DP of the dimensions same as that of the maze i.e. n*m.
+
+The meaning assigned to a single cell in this grid is that "to travel from that cell to the destination cell, 
+what is the minimum cost to traverse out of all the paths".
+
+DIRECTION
+We always try to solve the question for a simpler and smaller problem via which we move on to the bigger problem.
+
+We want you to meditate on the fact that to travel from the bottom right cell i.e. dp[n-1][m-1] to the the destination cell dp[n-1][m-1], 
+the minimum cost of the path is the same as the cost of the cell corresponding 
+to the input array (according to the "Meaning" we assigned for a single cell).
+
+ */
+
+
+
 
 
 /*
