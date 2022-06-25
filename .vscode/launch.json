@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch p03_ClimbingStairs_UsingDP",
+            "request": "launch",
+            "mainClass": "p03_ClimbingStairs_UsingDP",
+            "projectName": "DSA World_e577409a"
+        },
+        {
+            "type": "java",
             "name": "Launch p14_PivotElement",
             "request": "launch",
             "mainClass": "p14_PivotElement",
