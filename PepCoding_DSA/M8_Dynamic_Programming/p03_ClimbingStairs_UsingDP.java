@@ -26,10 +26,21 @@ public class p03_ClimbingStairs_UsingDP {
         return dp[n];
     }
 }
+/*
 
+Time Complexity :
+O(n)
 
+Clearly, we are performing a loop of n iterations, and each iteration we are performing O(1) operations hence overall O(n).
 
+This problem is very similar to Fibonacci except for the fact that we are using the last 3 instead of the last 2 in the case of Fibonacci.
 
+SPACE COMPLEXITY :
+O(n)
+
+We are using a single array of size n+1 hence the space complexity is linear in nature. i.e O(n)
+
+ */
 
 
 /*
@@ -53,10 +64,7 @@ Simple recursion program :
     }
 
 
-
-
-
-    **Recursion using memoization
+    Recursion using memoization
 
     public static int countPaths(int n, int[] qb) {
         if(n == 0){
@@ -79,6 +87,9 @@ Simple recursion program :
 
         return cp;
     }
+
+
+
 
 
 
