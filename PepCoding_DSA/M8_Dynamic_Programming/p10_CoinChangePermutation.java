@@ -1,4 +1,13 @@
 
+
+/*
+
+4
+2 3 5 6
+10
+17
+
+ */
 import java.util.*;
 
 public class p10_CoinChangePermutation {
