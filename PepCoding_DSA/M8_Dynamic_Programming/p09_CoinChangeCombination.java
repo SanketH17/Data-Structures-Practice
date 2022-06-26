@@ -8,7 +8,7 @@ dp[] = 0 0 0 0 0 0 0
 
 
 import java.util.*;
-public class p08_CoinChangeCombination {
+public class p09_CoinChangeCombination {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
