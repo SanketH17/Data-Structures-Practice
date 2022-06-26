@@ -22,8 +22,8 @@ public class p09_CoinChangeCombination {
         int[] dp = new int[amt + 1];
         dp[0] = 1; // to pay 0 we always have 1 way
 
-        for(int i = 0; i < arr.length; i++){
-            for(int j = arr[i]; j < dp.length; j++){
+        for(int i = 0; i < arr.length; i++){ // coins
+            for(int j = arr[i]; j < dp.length; j++){ //dp
                 dp[j] = dp[j] + dp[j - arr[i]];
             }
         }
