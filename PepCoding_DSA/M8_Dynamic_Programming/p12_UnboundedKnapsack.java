@@ -1,6 +1,11 @@
 
 /*
 
+
+Key difference from 0-1 Knapsack and Unbounded knapsack is in
+Unbounded knapsack we can take one weight multiple times 
+
+
 Sample input :
 5
 15 14 10 45 30
