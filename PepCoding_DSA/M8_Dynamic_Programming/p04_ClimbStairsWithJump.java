@@ -75,3 +75,16 @@ public class p04_ClimbStairsWithJump {
         sc.close();
     }
 }
+
+/*
+
+Time Complexity :
+O(n2)
+
+Here we are running to loops. Outerloop runs n times and the inner loop can run n times in the worst case. And within the inner loop, we are just adding hence we will get constant time. So it's O(n*n) = O(n2).
+SPACE COMPLEXITY :
+O(n)
+
+Here we are just using one dp[] array of length n+1, to store the results. Thus the space complexity will be O(n+1) = O(n)
+
+ */
