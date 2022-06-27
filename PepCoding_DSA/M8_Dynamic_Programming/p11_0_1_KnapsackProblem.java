@@ -46,3 +46,14 @@ public class p11_0_1_KnapsackProblem {
         sc.close();
     }
 }
+
+
+/*
+
+Time Complexity :
+The time complexity of this method using tabulation in dynamic programming is O(n*c) where n is the number of items given to us and c is the capacity of the bag. This is because we have stored and traversed the values in a 2-D matrix dp which is of the order (n+1)*(c+1). Notice how the time complexity is reduced in comparison with the recursion and backtracking method (which was O(2n)).
+
+SPACE COMPLEXITY :
+The space complexity is also O(n*c) as we have created a matrix dp of order (n+1)*(c+1).
+
+ */
