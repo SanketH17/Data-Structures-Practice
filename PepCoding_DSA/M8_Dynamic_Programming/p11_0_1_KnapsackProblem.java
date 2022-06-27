@@ -1,4 +1,15 @@
 
+
+/*
+Sample input :
+5
+15 14 10 45 30
+2 5 1 3 4
+7
+
+Sample output :
+75
+ */
 import java.util.*;
 
 public class p11_0_1_KnapsackProblem {
