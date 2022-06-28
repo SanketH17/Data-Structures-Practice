@@ -1,4 +1,19 @@
 
+
+/*
+
+Sample input :
+4 3
+1 5 7
+5 8 4
+3 2 9
+1 2 4
+
+Sample output :
+8
+
+*/
+
 import java.util.*;
 
 public class p19_Paint_House2 {
@@ -122,4 +137,6 @@ public static void main(String[] args) {
         sc.close();
 
     }
- */
+
+
+*/
