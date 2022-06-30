@@ -7,7 +7,14 @@
 6 7 12 14 15
 5 8 5 3 1
 5
+
 */
+
+
+/*                                            O(n^2)                                          */
+
+
+
 
 import java.util.*;
 
@@ -29,11 +36,42 @@ public class p26_HighWay_Billboard {
 
         int t = sc.nextInt();
 
-        int ans = solution(m, x, revenue, t);
+        int ans = solution(n, x, revenue, t);
         System.out.println(ans);
         sc.close();
 
     }
+
+    public static int solution(int n, int[] x, int[] rev, int t){
+
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i < x.length; i++){
+            map.put(x[i], rev[i]);
+        }
+
+        int[] dp = new int[n + 1];
+        dp[0] = 0;
+        for(int i = 1; i <= n; i++){
+            if(map.containsKey(i) == false){
+                dp[i] = dp[i - 1];
+            }
+            else{
+                int boardNotInstalled = dp[i - 1];
+                int boardInstalled = map.get(i);
+                if(i >= t + 1){
+                    boardInstalled += dp[i - t - 1];
+                }
+                dp[i] = Math.max(boardInstalled, boardNotInstalled);
+            }
+        }
+        return dp[n];
+    }
+
+}
+
+/*
+
+********************  O(n^2)  *******************
 
     public static int solution(int m, int[] x, int[] rev, int t){
 
@@ -57,12 +95,6 @@ public class p26_HighWay_Billboard {
         return ans;
     }
 
-}
 
-/*
-20
-5 
-6 7 12 14 15 // board mile no
-5 8 5 3 1 // rev
-5
-*/
+
+ */
