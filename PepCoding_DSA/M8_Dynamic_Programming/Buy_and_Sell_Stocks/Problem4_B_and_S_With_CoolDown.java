@@ -1,5 +1,9 @@
 package Buy_and_Sell_Stocks;
 
+/*
+There can be no overlapping transaction
+ */
+
 import java.util.*;
 
 public class Problem4_B_and_S_With_CoolDown {
@@ -23,18 +27,18 @@ public class Problem4_B_and_S_With_CoolDown {
 
             // Determine new bought state profit
             if(ocsp - arr[i] > obsp){
-                nbsp = ocsp - arr[i];
+                nbsp = ocsp - arr[i]; // bought on cooling 
             }
             else{
-                nbsp = obsp;
+                nbsp = obsp; // else take earlier state as it is
             }
 
             // Determine sold state profit
-            if(obsp + arr[i] > ossp){
+            if(obsp + arr[i] > ossp){ // sold on obsp if it is greater than old sold state profit
                 nssp = obsp + arr[i];
             }
             else{
-                nssp = ossp;
+                nssp = ossp; // else take prev ossp
             }
 
             // Determine cooling state profit

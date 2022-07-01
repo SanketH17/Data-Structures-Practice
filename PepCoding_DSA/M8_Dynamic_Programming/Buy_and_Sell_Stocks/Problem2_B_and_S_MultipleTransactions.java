@@ -1,5 +1,12 @@
 package Buy_and_Sell_Stocks;
 
+
+/*
+
+Key points :
+Collect all upstrokes
+
+ */
 import java.util.*;
 
 public class Problem2_B_and_S_MultipleTransactions {
