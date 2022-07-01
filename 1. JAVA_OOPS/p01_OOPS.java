@@ -23,12 +23,12 @@ class Student{
 public class p01_OOPS{
     public static void main(String[] args) {
         
-        Student s1 = new Student(); // s1 is an object of class Student
+        Student s1 = new Student(); // s1 is an reference of class Student
         s1.age = 24;
         s1.name = "Sanket";
         s1.getInfo();
 
-        Student s2 = new Student(); // s2 is another object of a class Student
+        Student s2 = new Student(); // s2 is another reference of a class Student
         s2.name = "Aditya";
         s2.age = 20;
         s2.getInfo(); // method
