@@ -1,3 +1,5 @@
+package M8_Dynamic_Programming;
+
 /*
 Sample input :
 4
