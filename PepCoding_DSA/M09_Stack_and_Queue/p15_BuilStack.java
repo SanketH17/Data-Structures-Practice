@@ -1,6 +1,64 @@
 package M09_Stack_and_Queue;
 /*
-p15_BuilStack
+
+Sample Input
+5
+push 10
+display
+push 20
+display
+push 30
+display
+push 40
+display
+push 50
+display
+push 60
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+display
+top
+pop
+quit
+Sample Output
+10 
+20 10 
+30 20 10 
+40 30 20 10 
+50 40 30 20 10 
+Stack overflow
+50 40 30 20 10 
+50
+50
+40 30 20 10 
+40
+40
+30 20 10 
+30
+30
+20 10 
+20
+20
+10 
+10
+10
+
+Stack underflow
+Stack underflow
+
  */
 
 import java.io.*;
