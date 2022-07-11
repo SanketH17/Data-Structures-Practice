@@ -1,4 +1,4 @@
-package Buy_and_Sell_Stocks;
+package M8_Dynamic_Programming.Buy_and_Sell_Stocks;
 
 import java.util.*;
 
