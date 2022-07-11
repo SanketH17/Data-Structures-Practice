@@ -1,5 +1,17 @@
 package M09_Stack_and_Queue;
 
+/*
+
+Sample Input :
+-+2/*6483
+
+Sample Output :
+2
+((2+((6*4)/8))-3)
+264*8/+3-
+
+ */
+
 import java.util.*;
 
 public class p11_Prefix_Evaluation_and_Conversion {
