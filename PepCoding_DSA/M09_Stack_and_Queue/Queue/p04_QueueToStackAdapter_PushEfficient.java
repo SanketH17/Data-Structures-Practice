@@ -155,3 +155,16 @@ public class p04_QueueToStackAdapter_PushEfficient {
         }
     }
 }
+
+/*
+
+Time & Space Complexity Analysis
+Push - O(1): We are just adding the element in the main queue.
+
+Size - O(1): We are returning the size of the main queue.
+
+Pop (or Top) - O(n) :Firstly, we are dequeuing size elements from the main queue adding them in the helper queue, which takes n * O(1) = O(n) time.
+Now, we are doing the reverse process (removing n elements from the helper queue and adding them to the main queue), which again takes O(n) time.
+Hence, total time taken will be O(n + n) = O(n).
+
+ */
