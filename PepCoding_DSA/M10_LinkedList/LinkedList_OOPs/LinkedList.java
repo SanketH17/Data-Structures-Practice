@@ -14,8 +14,8 @@ public class LinkedList {
     }
 
     private Node head;
-    private Node tail;
-    private int size;
+    //private Node tail;
+    //private int size;
     
     public void display() {
 
