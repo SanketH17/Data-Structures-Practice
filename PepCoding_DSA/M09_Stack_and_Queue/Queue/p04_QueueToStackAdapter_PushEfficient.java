@@ -1,6 +1,6 @@
 package M09_Stack_and_Queue.Queue;
 
-/* 
+/*
 Sample Input :
 push 10
 push 20
