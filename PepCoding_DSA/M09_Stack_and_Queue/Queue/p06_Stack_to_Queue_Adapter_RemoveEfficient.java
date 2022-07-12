@@ -83,3 +83,24 @@ public class p06_Stack_to_Queue_Adapter_RemoveEfficient {
         }
     }
 }
+
+
+
+/*
+
+Time Complexity:
+Add: The time complexity is O(n) as we are popping all the values from the main stack and pushing them 
+into the helper stack and doing vice-versa. So, the time complexity becomes n+n=2n=O(n).
+
+Remove: The time complexity for this method is O(1) as we just popped a value from the main stack.
+
+Size: The time complexity is O(1) as we just return the size of the main stack.
+
+Peek: The time complexity is O(1) as we just use the peek method of the main stack.
+
+Space Complexity:
+Well the space complexity can be considered as O(n) as we are using two stacks for implementing the queue. 
+But, these two stacks are given to us in our question, and apart from these stacks, 
+we have not used any extra data structure or memory to implement the queue. Hence the space complexity will be O(1).
+
+ */
