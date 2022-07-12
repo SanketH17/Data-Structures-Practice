@@ -114,7 +114,7 @@ public class p05_QueueToStackAdapter_PopEfficient {
     }
 
     /******************************************
-     * The code is already given as below we have to implement the above functions
+     * The base code is already given as below we have to implement the above functions
      **********************/
 
     public static void main(String[] args) throws Exception {
