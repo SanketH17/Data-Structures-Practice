@@ -62,7 +62,7 @@ public class p07_Stack_to_Queue_Adapter_AddEfficient {
         }
     }
 
-    
+
 /******************************************** The base code is already given as below we have to implement the above functions *************************************************/
 
     public static void main(String[] args) throws Exception {
@@ -91,3 +91,22 @@ public class p07_Stack_to_Queue_Adapter_AddEfficient {
         }
     }
 }
+
+
+/*
+
+Time Complexity:
+Add: The time complexity is O(1) because we have used the stack push method.
+
+Size: The time complexity is O(1) as we have just returned the size of the stack.
+
+Peek: The time complexity of the peek method is O(n) as we pooped the entire stack of n elements and then pushed them back again. So, there are two traversals. So, the time complexity will be n+n=2n i.e. O(n).
+
+Remove: The time complexity of this method is O(n) as we pooped the entire stack of n elements and then pushed them back again. So, there are two traversals. So, the time complexity will be n+n=2n i.e. O(n).
+
+
+Space Complexity:
+Well the space complexity can be considered as O(n) as we are using two stacks for implementing the queue. 
+But, these two stacks are given to us in our question, and apart from these stacks, 
+we have not used any extra data structure or memory to implement the queue. Hence, the space complexity will be O(1).
+ */
