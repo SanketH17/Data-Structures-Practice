@@ -12,7 +12,8 @@ public class p04_RemoveFirst {
         Node head;
         Node tail;
         int size;
-/*------------------------------------------------------------------------------------------------*/
+
+        /*------------------------------------------------------------------------------------------------*/
         void addLast(int val) {
             Node temp = new Node();
             temp.data = val;
@@ -27,36 +28,38 @@ public class p04_RemoveFirst {
 
             size++;
         }
-/***********************************************************************************************/
+
+        /***********************************************************************************************/
         public int size() {
             return size;
         }
-/***********************************************************************************************/
+
+        /***********************************************************************************************/
         public void display() {
-            for (Node temp = head; temp != null; temp = temp.next) {
-                System.out.print(temp.data + " ");
+            Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head.
+            while (temp != null) {
+                System.out.println(temp.data + " ");
+                temp = temp.next;
             }
             System.out.println();
         }
-/***********************************************************************************************/
+
+        /***********************************************************************************************/
         public void removeFirst() {
-            if(size == 0){
+            if (size == 0) {
                 System.out.println("List is empty");
-            } else if(size == 1){
+            } else if (size == 1) {
                 head = tail = null;
                 size--;
-            } else{
+            } else {
                 head = head.next;
                 size--;
             }
         }
-/***********************************************************************************************/
+        /***********************************************************************************************/
     }
 
-
-
-
-/***********************************************************************************************/
+    /***********************************************************************************************/
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         LinkedList list = new LinkedList();

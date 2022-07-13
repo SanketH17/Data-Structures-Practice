@@ -1,10 +1,9 @@
 package M10_LinkedList;
 
-/* */
-
 import java.io.*;
+//import java.util.*;
 
-public class p06_AddFirst {
+public class p07_AddAtIndex {
     public static class Node {
         int data;
         Node next;
@@ -15,7 +14,7 @@ public class p06_AddFirst {
         Node tail;
         int size;
 
-        /*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
         void addLast(int val) {
             Node temp = new Node();
             temp.data = val;
@@ -31,12 +30,12 @@ public class p06_AddFirst {
             size++;
         }
 
-        /*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
         public int size() {
             return size;
         }
 
-        /*-----------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------*/
         public void display() {
             Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head.
             while (temp != null) {
@@ -45,8 +44,8 @@ public class p06_AddFirst {
             }
             System.out.println();
         }
+/*-----------------------------------------------------------------------------*/
 
-        /*-----------------------------------------------------------------------------*/
         public void removeFirst() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -58,8 +57,8 @@ public class p06_AddFirst {
                 size--;
             }
         }
+/*-----------------------------------------------------------------------------*/
 
-        /*-----------------------------------------------------------------------------*/
         public int getFirst() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -68,8 +67,8 @@ public class p06_AddFirst {
                 return head.data;
             }
         }
+/*-----------------------------------------------------------------------------*/
 
-        /*-----------------------------------------------------------------------------*/
         public int getLast() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -78,8 +77,8 @@ public class p06_AddFirst {
                 return tail.data;
             }
         }
+/*-----------------------------------------------------------------------------*/
 
-        /*-----------------------------------------------------------------------------*/
         public int getAt(int idx) {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -95,8 +94,8 @@ public class p06_AddFirst {
                 return temp.data;
             }
         }
+/*-----------------------------------------------------------------------------*/
 
-        /*-----------------------------------------------------------------------------*/
         public void addFirst(int val) {
             Node temp = new Node();
             temp.data = val;
@@ -108,12 +107,39 @@ public class p06_AddFirst {
             }
 
             size++;
-
         }
-        /*-----------------------------------------------------------------------------*/
-    } // End linked list class
+/*-----------------------------------------------------------------------------*/
 
-    /* already given code */
+        public void addAt(int idx, int val) {
+            if(idx < 0 || idx > size) {
+                System.out.println("Invalid arguments");
+            } else if (idx == 0){
+                addFirst(val);
+            } else if (idx == size){
+                addLast(val);
+            } else {
+                Node node = new Node(); // creating new node - node
+                node.data = val;
+
+                Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head.
+                for(int i = 0; i < idx - 1; i++){
+                    temp = temp.next;
+                }
+                node.next = temp.next;
+                temp.next = node;
+
+            }
+        }
+/*-----------------------------------------------------------------------------*/
+
+    } // end linked list class
+
+
+
+
+
+
+
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -149,6 +175,10 @@ public class p06_AddFirst {
             } else if (str.startsWith("addFirst")) {
                 int val = Integer.parseInt(str.split(" ")[1]);
                 list.addFirst(val);
+            } else if (str.startsWith("addAt")) {
+                int idx = Integer.parseInt(str.split(" ")[1]);
+                int val = Integer.parseInt(str.split(" ")[2]);
+                list.addAt(idx, val);
             }
             str = br.readLine();
         }

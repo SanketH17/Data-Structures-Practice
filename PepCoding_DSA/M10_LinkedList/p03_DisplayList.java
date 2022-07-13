@@ -34,8 +34,8 @@ public class p03_DisplayList {
         }
 
         public void display() {
-            Node temp = head;
-            while(temp != null){
+            Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head.
+            while (temp != null) {
                 System.out.println(temp.data + " ");
                 temp = temp.next;
             }

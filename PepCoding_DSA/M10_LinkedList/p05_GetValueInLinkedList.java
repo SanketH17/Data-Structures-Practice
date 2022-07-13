@@ -34,8 +34,10 @@ public class p05_GetValueInLinkedList {
         }
 
         public void display() {
-            for (Node temp = head; temp != null; temp = temp.next) {
-                System.out.print(temp.data + " ");
+            Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head.
+            while (temp != null) {
+                System.out.println(temp.data + " ");
+                temp = temp.next;
             }
             System.out.println();
         }
@@ -52,34 +54,34 @@ public class p05_GetValueInLinkedList {
             }
         }
 
-        public int getFirst(){
-            if(size == 0){
+        public int getFirst() {
+            if (size == 0) {
                 System.out.println("List is empty");
                 return -1;
-            } else{
+            } else {
                 return head.data;
             }
         }
 
         public int getLast() {
-            if(size == 0){
+            if (size == 0) {
                 System.out.println("List is empty");
                 return -1;
-            } else{
+            } else {
                 return tail.data;
             }
         }
 
         public int getAt(int idx) {
-            if(size == 0){
+            if (size == 0) {
                 System.out.println("List is empty");
                 return -1;
-            } else if(idx < 0 || idx >= size){
+            } else if (idx < 0 || idx >= size) {
                 System.out.println("Invalid arguments");
                 return -1;
             } else {
                 Node temp = head;
-                for(int i = 0; i < idx; i++){
+                for (int i = 0; i < idx; i++) {
                     temp = temp.next;
                 }
                 return temp.data;
