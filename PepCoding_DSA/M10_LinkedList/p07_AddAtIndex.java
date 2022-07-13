@@ -140,7 +140,7 @@ public class p07_AddAtIndex {
 
 
 
-
+/*                                    Given Code                                 */
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         LinkedList list = new LinkedList();
