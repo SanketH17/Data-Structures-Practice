@@ -14,7 +14,7 @@ public class p09_ReverseLinkedList {
         Node head;
         Node tail;
         int size;
-
+/*-----------------------------------------------------------------------------*/
         void addLast(int val) {
             Node temp = new Node();
             temp.data = val;
@@ -29,11 +29,11 @@ public class p09_ReverseLinkedList {
 
             size++;
         }
-
+/*-----------------------------------------------------------------------------*/
         public int size() {
             return size;
         }
-
+/*-----------------------------------------------------------------------------*/
         public void display() {
             Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head.
             while (temp != null) {
@@ -42,7 +42,7 @@ public class p09_ReverseLinkedList {
             }
             System.out.println();
         }
-
+/*-----------------------------------------------------------------------------*/
         public void removeFirst() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -54,7 +54,7 @@ public class p09_ReverseLinkedList {
                 size--;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         public int getFirst() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -63,7 +63,7 @@ public class p09_ReverseLinkedList {
                 return head.data;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         public int getLast() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -72,7 +72,7 @@ public class p09_ReverseLinkedList {
                 return tail.data;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         public int getAt(int idx) {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -88,7 +88,7 @@ public class p09_ReverseLinkedList {
                 return temp.data;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         public void addFirst(int val) {
             Node temp = new Node();
             temp.data = val;
@@ -101,7 +101,7 @@ public class p09_ReverseLinkedList {
 
             size++;
         }
-
+/*-----------------------------------------------------------------------------*/
         public void addAt(int idx, int val) {
             if (idx < 0 || idx > size) {
                 System.out.println("Invalid arguments");
@@ -123,7 +123,7 @@ public class p09_ReverseLinkedList {
                 size++;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         public void removeLast() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -141,7 +141,7 @@ public class p09_ReverseLinkedList {
                 size--;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         public void removeAt(int idx) {
             if (idx < 0 || idx >= size) {
                 System.out.println("Invalid arguments");
@@ -159,7 +159,7 @@ public class p09_ReverseLinkedList {
                 size--;
             }
         }
-
+/*-----------------------------------------------------------------------------*/
         private Node getNodeAt(int idx){
             Node temp = head;
             for(int i = 0; i < idx; i++){
@@ -183,7 +183,12 @@ public class p09_ReverseLinkedList {
                 ri--;
             }
         }
+/*-----------------------------------------------------------------------------*/
     }
+
+
+
+    
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
