@@ -30,12 +30,12 @@ public class p18_RemoveDuplicatesFromSortedLL {
             size++;
         }
 
-/*-----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
         public int size() {
             return size;
         }
 
-/*-----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
         public void display() {
             Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to
                               // head.
@@ -46,7 +46,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             System.out.println();
         }
 
-/*-----------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
         public void removeFirst() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -59,7 +59,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
         public int getFirst() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -69,7 +69,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
         public int getLast() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -79,7 +79,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
         public int getAt(int idx) {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -96,7 +96,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------*/
         public void addFirst(int val) {
             Node temp = new Node();
             temp.data = val;
@@ -110,7 +110,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             size++;
         }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
         public void addAt(int idx, int val) {
             if (idx < 0 || idx > size) {
                 System.out.println("Invalid arguments");
@@ -119,7 +119,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             } else if (idx == size) {
                 addLast(val);
             } else {
-                Node node = new Node();
+                Node node = new Node();// new node memory allocation
                 node.data = val;
 
                 Node temp = head;
@@ -133,7 +133,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
         public void removeLast() {
             if (size == 0) {
                 System.out.println("List is empty");
@@ -152,7 +152,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
         public void removeAt(int idx) {
             if (idx < 0 || idx >= size) {
                 System.out.println("Invalid arguments");
@@ -171,7 +171,7 @@ public class p18_RemoveDuplicatesFromSortedLL {
             }
         }
 
-/*-----------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
         private Node getNodeAt(int idx) {
             Node temp = head;
             for (int i = 0; i < idx; i++) {
