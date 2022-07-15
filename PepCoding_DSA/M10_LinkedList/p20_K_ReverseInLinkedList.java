@@ -9,9 +9,9 @@ public class p20_K_ReverseInLinkedList {
     }
 
     public static class LinkedList {
-        Node head;
-        Node tail;
-        int size;
+        Node head; // initially head = null
+        Node tail; // initially tail = null
+        int size; // initially size = 0
 
 /*-----------------------------------------------------------------------------*/
         void addLast(int val) {
@@ -36,8 +36,8 @@ public class p20_K_ReverseInLinkedList {
 
 /*------------------------------------------------------------------------------------------------*/
         public void display() {
-            Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to
-                              // head.
+            Node temp = head; // Just declaring another node (not creating new node) temp which is pointing to head
+                             
             while (temp != null) {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
@@ -118,7 +118,7 @@ public class p20_K_ReverseInLinkedList {
             } else if (idx == size) {
                 addLast(val);
             } else {
-                Node node = new Node();// new node memory allocation
+                Node node = new Node(); // new node memory allocation
                 node.data = val;
 
                 Node temp = head;

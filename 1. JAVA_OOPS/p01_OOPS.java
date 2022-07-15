@@ -9,15 +9,11 @@ class Student{
     int age;
 
     public void getInfo(){
-        System.out.println("The name of this student is " + this.name);
-        System.out.println("The age of this student is " + this.age);
+        System.out.println("The name of this student is " + name);
+        System.out.println("The age of this student is " + age);
     }
 
 }
-
-
-
-
 
 
 public class p01_OOPS{

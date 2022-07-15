@@ -283,6 +283,8 @@ public class p16_MergeTwoLists {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n1 = Integer.parseInt(br.readLine());
+
+        // List 1
         LinkedList l1 = new LinkedList();
         String[] values1 = br.readLine().split(" ");
         for (int i = 0; i < n1; i++) {
@@ -291,6 +293,8 @@ public class p16_MergeTwoLists {
         }
 
         int n2 = Integer.parseInt(br.readLine());
+
+        // List 2
         LinkedList l2 = new LinkedList();
         String[] values2 = br.readLine().split(" ");
         for (int i = 0; i < n2; i++) {
@@ -298,6 +302,7 @@ public class p16_MergeTwoLists {
             l2.addLast(d);
         }
 
+        
         LinkedList merged = LinkedList.mergeTwoSortedLists(l1, l2);
         merged.display();
         l1.display();
