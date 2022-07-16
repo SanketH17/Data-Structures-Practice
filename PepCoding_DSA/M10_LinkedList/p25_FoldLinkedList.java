@@ -498,6 +498,8 @@ public class p25_FoldLinkedList {
 
 
 
+
+
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
@@ -520,3 +522,8 @@ public class p25_FoldLinkedList {
         l1.display();
     }
 }
+
+
+
+
+
