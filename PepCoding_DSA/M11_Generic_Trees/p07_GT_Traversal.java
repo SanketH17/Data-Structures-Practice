@@ -105,6 +105,13 @@ public class p07_GT_Traversal {
 
     }
 
+/*
+Time Complexity:
+O(2^n) - each recursive call makes 2^n calls
+
+Space Complexity:
+O(1)  - No extra space is taken
+*/
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
