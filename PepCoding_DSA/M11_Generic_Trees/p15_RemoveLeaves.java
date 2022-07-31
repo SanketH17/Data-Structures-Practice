@@ -51,7 +51,7 @@ public class p15_RemoveLeaves {
         Collections.reverse(node.children); // 2
 
     }
-
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
     public static void RemoveLeaves(Node node) {
 
         for(int i = node.children.size() - 1; i >= 0; i--) {
@@ -75,7 +75,8 @@ Space Complexity:
 We are not using any extra space in the form of any auxiliary data structure. Hence the space complexity is O(1).
 
 Note: We are using recursion which does take stack space of O(d) where d = maximum depth of the generic tree.
- */
+*/
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
