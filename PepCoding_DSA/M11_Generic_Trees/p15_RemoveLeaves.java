@@ -66,6 +66,16 @@ public class p15_RemoveLeaves {
         }
 
     }
+    
+/*
+Time Complexity:
+We are traversing all the nodes once, hence the time complexity will be O(n) where n = number of nodes in the generic tree.
+
+Space Complexity:
+We are not using any extra space in the form of any auxiliary data structure. Hence the space complexity is O(1).
+
+Note: We are using recursion which does take stack space of O(d) where d = maximum depth of the generic tree.
+ */
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
