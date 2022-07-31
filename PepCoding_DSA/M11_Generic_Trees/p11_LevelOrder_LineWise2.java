@@ -248,7 +248,10 @@ In the worst case, the child stack might have n - 1 nodes.
             }
         }
     }
-
+/* 
+Time : O(n)
+Space : O(n)
+*/
 
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
