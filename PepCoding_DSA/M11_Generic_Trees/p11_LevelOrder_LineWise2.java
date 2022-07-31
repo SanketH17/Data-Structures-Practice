@@ -226,7 +226,6 @@ In the worst case, the child stack might have n - 1 nodes.
 */
 /*-------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
     public static void levelOrderTraversal2(Node node) {
         Queue<Node> mq = new ArrayDeque<>();
         mq.add(node);
@@ -252,7 +251,7 @@ In the worst case, the child stack might have n - 1 nodes.
 Time : O(n)
 Space : O(n)
 */
-
+/*-------------------------------------------------------------------------------------------------------------------------------------------------*/
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
