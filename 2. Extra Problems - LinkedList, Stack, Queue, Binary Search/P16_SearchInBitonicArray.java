@@ -1,6 +1,23 @@
-
 import java.util.*;
+/*
 
+Input :
+ 7 
+ 3 9 10 20 17 5 1 
+ 20
+
+ Output :
+ 3
+
+ Input :
+ 9 
+ 5 6 7 8 9 10 3 2 1 
+ 30
+
+ Output :
+ -1
+ 
+*/
 public class P16_SearchInBitonicArray {
 
     public static int findPeek(int[] arr, int start, int end) {
