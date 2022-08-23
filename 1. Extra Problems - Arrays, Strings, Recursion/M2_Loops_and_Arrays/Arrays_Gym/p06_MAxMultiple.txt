@@ -1,0 +1,19 @@
+package ProblemSolving.M2_Loops_and_Arrays.Arrays_Gym;
+
+import java.util.*;
+
+public class p06_MAxMultiple {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+    //int[] arr = { -12, 17, -13, 17 };
+        //long res =  maximumMultiple(arr.length, arr);
+        //System.out.println(res);
+    }
+
+    // public static long maximumMultiple(int n, int[] arr) {
+    //     int[] ans = new int[n];
+    //     return ;
+        
+    // }
+}
