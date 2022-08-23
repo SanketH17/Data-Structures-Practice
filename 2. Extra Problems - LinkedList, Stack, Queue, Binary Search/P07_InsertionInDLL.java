@@ -30,7 +30,7 @@ public class P07_InsertionInDLL {
         // 3. newNode will point to next i.e. head which was prev
         newNode.next = head;
 
-        // 4. return the newely created node
+        // 4. return the newely created node and it is the head now
         return newNode;
     }
 
@@ -60,6 +60,8 @@ public class P07_InsertionInDLL {
         newNode.prev = last;
         return head;
     }
+
+
 
     static void printLL(Node head) {
         Node currNode = head;
