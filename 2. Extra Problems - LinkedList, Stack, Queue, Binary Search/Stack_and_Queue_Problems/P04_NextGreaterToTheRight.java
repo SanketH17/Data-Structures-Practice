@@ -14,7 +14,6 @@ public class P04_NextGreaterToTheRight {
         }
 
         int[] ans = solve(arr);
-        //System.out.println(Arrays.toString(ans));
         for(int i = 0; i < ans.length; i++) {
             System.out.print(ans[i] + " ");
         }
