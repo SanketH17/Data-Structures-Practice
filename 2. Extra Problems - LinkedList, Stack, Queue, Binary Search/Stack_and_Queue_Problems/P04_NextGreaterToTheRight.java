@@ -36,7 +36,7 @@ public class P04_NextGreaterToTheRight {
             // if stack size is zero
             if(st.size() == 0) {
                 nge[i] = -1;
-            } else { // if we get a greater element at top 
+            } else { // if we get a greater element at top than arr[i]
                 nge[i] = st.peek();
             }
 
