@@ -1,4 +1,4 @@
-package Stack_and_Queue_Problems;
+package Stack_Problems;
 
 import java.util.Scanner;
 
