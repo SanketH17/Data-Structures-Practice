@@ -1,3 +1,4 @@
+package Binary_Search;
 import java.util.*;
 
 public class P14_FirstAndLastIndex {
