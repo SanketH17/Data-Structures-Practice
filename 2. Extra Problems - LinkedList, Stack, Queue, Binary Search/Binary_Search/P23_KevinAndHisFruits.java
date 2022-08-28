@@ -30,6 +30,7 @@ public class P23_KevinAndHisFruits {
                 return mid;
             }
 
+            // Kevin need to eat more fruit so we will try for better ans 
             else if (count < m) {
                 right = mid - 1;
             }
