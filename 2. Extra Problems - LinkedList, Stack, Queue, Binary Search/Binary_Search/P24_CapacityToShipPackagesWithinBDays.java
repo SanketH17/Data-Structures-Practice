@@ -4,9 +4,9 @@ import java.util.*;
 
 public class P24_CapacityToShipPackagesWithinBDays {
 
-    public static int shipWithinBDays(int[] wt, int days) {
+    public static long shipWithinBDays(int[] wt, int days) {
         int max = 0;
-        int sum = 0;
+        long sum = 0;
 
         for (int val : wt) {
             sum += val;
@@ -17,12 +17,12 @@ public class P24_CapacityToShipPackagesWithinBDays {
             return max;
         }
 
-        int lo = max;
-        int hi = sum;
-        int ans = 0;
+        long lo = max;
+        long hi = sum;
+        long ans = 0;
 
         while (lo <= hi) {
-            int mid = lo + (hi - lo) / 2;
+            long mid = lo + (hi - lo) / 2;
 
             if (isPossible(wt, mid, days) == true) {
                 ans = mid;
@@ -35,9 +35,9 @@ public class P24_CapacityToShipPackagesWithinBDays {
 
     }
 
-    private static boolean isPossible(int[] wt, int mid, int days) {
+    private static boolean isPossible(int[] wt, long mid, int days) {
         int d = 1;
-        int sum = 0;
+        long sum = 0;
         for (int i = 0; i < wt.length; i++) {
             sum += wt[i];
 
@@ -61,8 +61,8 @@ public class P24_CapacityToShipPackagesWithinBDays {
 
         int days = sc.nextInt();
 
-        int ans = shipWithinBDays(arr, days);
-        System.out.println(ans);
+        
+        System.out.println(shipWithinBDays(arr, days));
         sc.close();
     }
 }
