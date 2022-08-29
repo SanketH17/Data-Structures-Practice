@@ -72,8 +72,9 @@ public class P08_SumofSubarrayMinimums {
         long res = 0;
         for (int i = 0; i < arr.length; i++) {
             res += arr[i] * leftArr[i] * rightArr[i];
+            res = res % 1000000007;
         }
-        return (int) (res % (1e9 + 7));
+        return (int)res;
 
     }
 
