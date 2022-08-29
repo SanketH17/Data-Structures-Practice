@@ -31,28 +31,36 @@ public class P10_InfixToPostfix {
             
             else if (ch == ')') {
                 while(ops.peek() != '(') {
-                    process(ops, postfix);
+                    process(ops, postfix, exp);
                 }
                 ops.pop(); // pop openenig operator
             } 
             
             else if (ch == '+' || ch == '-' || ch == '*' || ch == '/') {
                 while(ops.size() > 0 && ops.peek() != '(' && precedene(ch) <= precedene(ops.peek())) {
-                    process(ops, postfix);
+                    process(ops, postfix, exp);
                 }
                 ops.push(ch);// push current character
             }
         }
 
         while(ops.size() > 0) {
-            process(ops, postfix);
+            process(ops, postfix, exp);
         }
 
         System.out.println(postfix.pop());
 
     }
 
-    public static void process(Stack<Character> ops, Stack<String> postfix) {
+    public static void process(Stack<Character> ops, Stack<String> postfix, String exp) {
+        if(exp.length() == 2) {
+            char op = ops.pop();
+            String postv2 = postfix.pop();
+            String postv = postv2 + op;
+            postfix.push(postv);
+            return;
+        }
+
         char op = ops.pop();
 
         String postv2 = postfix.pop();
