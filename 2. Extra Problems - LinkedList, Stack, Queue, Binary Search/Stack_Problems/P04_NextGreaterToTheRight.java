@@ -43,8 +43,6 @@ public class P04_NextGreaterToTheRight {
 
             st.push(arr[i]);
         }
-
         return nge;
-
     }
 }
