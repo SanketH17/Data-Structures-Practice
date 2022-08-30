@@ -116,7 +116,7 @@ public class P16_SearchInBitonicArray {
         index = binarySearchIncr(arr, 0, bitonicPoint, x);
         if (index != -1) {
             System.out.println(index);
-            //return;
+            return;
         }
         index = binarySearchDecr(arr, bitonicPoint + 1, n - 1, x);
         System.out.println(index);
