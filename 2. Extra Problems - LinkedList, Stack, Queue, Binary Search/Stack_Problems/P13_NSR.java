@@ -1,7 +1,7 @@
 package Stack_Problems;
 
 import java.util.*;
-import java.util.Stack;;
+import java.util.Stack;
 
 public class P13_NSR {
     public static void main(String[] args) {
