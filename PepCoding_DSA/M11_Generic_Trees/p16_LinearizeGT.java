@@ -48,7 +48,7 @@ public class p16_LinearizeGT {
         for (Node child : node.children) { // 1
             mirror(child);
         }
-        Collections.reverse(node.children); // 2
+        //Collections.reverse(node.children); // 2
 
     }
 
