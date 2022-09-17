@@ -38,6 +38,6 @@ public class P02_GetCommonElement1 {
                 fmap.remove(val);
             }
         }
-
+        sc.close();
     }
 }
