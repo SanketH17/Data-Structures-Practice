@@ -1,7 +1,8 @@
 {
     "java.project.sourcePaths": [
         "2. Extra Problems - LinkedList, Stack, Queue, Binary Search",
-        "3. Hashing-HashMap/M1_Hashing1"
+        "3. Hashing-HashMap/M1_Hashing1",
+        "PepCoding_DSA"
     ],
     "git.ignoreLimitWarning": true
 }

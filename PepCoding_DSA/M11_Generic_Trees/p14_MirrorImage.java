@@ -49,7 +49,7 @@ public class p14_MirrorImage {
         for (Node child : node.children) { // 1
             mirror(child);
         }
-        Collections.reverse(node.children); // 2
+        //Collections.reverse(node.children); // 2
 
     }
 

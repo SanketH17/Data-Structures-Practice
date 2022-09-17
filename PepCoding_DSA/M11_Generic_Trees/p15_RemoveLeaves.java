@@ -48,7 +48,7 @@ public class p15_RemoveLeaves {
         for (Node child : node.children) { // 1
             mirror(child);
         }
-        Collections.reverse(node.children); // 2
+        //Collections.reverse(node.children); // 2
 
     }
 /*------------------------------------------------------------------------------------------------------------------------------------------------*/
