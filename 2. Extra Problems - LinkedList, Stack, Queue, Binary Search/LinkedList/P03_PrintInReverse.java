@@ -27,20 +27,6 @@ class Linkedlist {
         }
     }
 
-    void DeleteKthElement(int k) {
-        if (k == 0) {
-            head = head.next;
-        } else {
-            // we will find (k-1)th node
-            Node temp = head;
-            while(k > 1) {
-                temp = temp.next;
-                k--;
-            }
-            temp.next = temp.next.next;
-        }
-    }
-
     void printList() {
         if(head == null) {
             System.out.println("-1");
@@ -53,8 +39,6 @@ class Linkedlist {
             System.out.println();
         }
     }
-
-    
     
 }
 

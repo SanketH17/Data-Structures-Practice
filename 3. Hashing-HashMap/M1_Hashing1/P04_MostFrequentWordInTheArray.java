@@ -14,19 +14,22 @@ public class P04_MostFrequentWordInTheArray {
         HashMap<String, Integer> fmap = new HashMap<>();
 
         for(int i = 0; i < str.length; i++) {
-            if(fmap.containsKey(str[i])) {
-                int of = fmap.get(str[i]);
-                int nf = of + 1;
-                fmap.put(str[i], nf);
-            } else {
-                fmap.put(str[i], 1);
+            String s = str[i];
+            fmap.put(s, fmap.getOrDefault(s, 0) + 1);
+        }
+
+        String ans = "";
+        int maxFreq = 0;
+
+        for(int i = 0; i < n; i++) {
+            String word = str[i];
+            if(fmap.get(word) >= maxFreq) {
+                ans = word;
+                maxFreq = fmap.get(word);
             }
         }
 
-        int max = 0;
-        for(String key : fmap.keySet()) {
-            //if()
-        }
-
+        System.out.println(ans);
+        sc.close();
     }
 }
