@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class P12_SubarraySumEqualsK_accio {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int target = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println(solution(arr, target));
+
+        sc.close();
+    }
+
+    public static int solution(int[] arr, int k) {
+        
+    }
+}
