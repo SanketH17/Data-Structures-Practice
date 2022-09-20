@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.*;
-
+/*
+This question is also present in Gym section
+*/
 public class P10_LargestSubarrayWith0Sum {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
