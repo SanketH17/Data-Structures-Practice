@@ -7,36 +7,30 @@ public class P11_SubarraySumEqualToK {
         int n = sc.nextInt();
         int target = sc.nextInt();
         int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
 
+        
         System.out.println(solution(arr, target));
-
+        
+        
         sc.close();
     }
 
     public static int solution(int[] arr, int target) {
-        // write your code here
         int ans = 0;
-        HashMap<Integer, Integer> fmap = new HashMap<>();
 
+        HashMap<Integer, Integer> map = new HashMap<>();
+        map.put(0, 1);
         int sum = 0;
-        int i = -1;
-        fmap.put(sum, 1);
 
-        while (i < arr.length - 1) {
-
-            i++;
+        for(int i = 0; i < arr.length; i++) {
             sum += arr[i];
-
-            int rsum = sum - target;
-
-            if (fmap.containsKey(rsum)) {
-                ans += fmap.get(rsum);
+            if(map.containsKey(sum - target)) {
+                ans = ans + map.get(sum - target);
             }
-            int ofreq = fmap.getOrDefault(sum, 0);
-            fmap.put(sum, ofreq + 1);
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
         return ans;
     }
