@@ -11,10 +11,8 @@ public class P11_SubarraySumEqualToK {
             arr[i] = sc.nextInt();
         }
 
-        
         System.out.println(solution(arr, target));
-        
-        
+  
         sc.close();
     }
 
