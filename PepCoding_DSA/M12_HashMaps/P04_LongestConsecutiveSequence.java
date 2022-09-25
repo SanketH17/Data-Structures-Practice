@@ -14,10 +14,12 @@ public class P04_LongestConsecutiveSequence {
 
         HashMap<Integer, Boolean> map = new HashMap<>();
 
+        // make all values true for each arr element
         for(int val : arr) {
                 map.put(val, true);
         }
 
+        // make arr[i] false if it's prev element is present
         for(int val : arr) {
             if(map.containsKey(val - 1)) {
                 map.put(val, false);
@@ -43,9 +45,7 @@ public class P04_LongestConsecutiveSequence {
             }
         }
 
-        for(int i = 0; i < ml; i++) {
-            System.out.println(msp + i);
-        }
+        System.out.println(ml);
         sc.close();
     }
 }
