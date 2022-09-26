@@ -27,5 +27,6 @@ public class UniqueNoOfOccrences {
         } else {
             System.out.println("false");
         }
+        sc.close();
     }
 }
