@@ -1,8 +1,8 @@
-package SlidingWindow;
+
 
 import java.util.Scanner;
 
-public class P01_RahulAndMinimumSubarray {
+public class P02_RahulAndMinimumSubarray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
