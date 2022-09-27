@@ -91,6 +91,5 @@ public class P11_MergeTwoLLs {
             h = h.next;
         }
         sc.close();
-
     }
 }
