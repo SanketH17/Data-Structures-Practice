@@ -1,3 +1,7 @@
+package ContestProblems;
+
+
+
 import java.util.Scanner;
 
 public class FindHingedElement {

@@ -1,3 +1,5 @@
+package M1_Hashing1;
+
 import java.util.Scanner;
 import java.util.*;
 /*

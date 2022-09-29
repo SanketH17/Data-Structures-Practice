@@ -1,3 +1,5 @@
+package M1_Hashing1;
+
 import java.util.*;
 
 public class P07_FindAllAnagramsInAString {
