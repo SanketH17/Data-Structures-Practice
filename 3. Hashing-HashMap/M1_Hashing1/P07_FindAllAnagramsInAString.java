@@ -47,9 +47,9 @@ public class P07_FindAllAnagramsInAString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt();
+       // int n = sc.nextInt();
         String s = sc.next();
-        int m = sc.nextInt();
+        //int m = sc.nextInt();
         String p = sc.next();
 
         findAnagrams(s, p);
