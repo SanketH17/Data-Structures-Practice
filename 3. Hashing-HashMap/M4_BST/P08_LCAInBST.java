@@ -1,113 +1,95 @@
-/*
-2
-p, q - 3, 5
-2 1 3 -1 -1 -1 5 -1 -1
-
-p, q -> 1, 3
-2 1 4 -1 -1 3 -1 -1 -1 
-*/
-
-/* */
-
 import java.util.*;
 
-class Node {
+class TreeNode{
     int val;
-    Node left;
-    Node right;
-
-    public Node(int key) {
+    TreeNode left;
+    TreeNode right;       
+    public TreeNode(int key)
+        {
         val = key;
-        left = right = null;
-    }
+        left = null;
+        right = null;
+       }
 }
-
-class BST {
-    Node root;
-
-    public BST() {
+class BST{
+    private TreeNode root;
+    public BST()
+        {
         root = null;
-    }
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
-        if (root == null) {
-            root = new Node(key);
-            return root;
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+ static TreeNode LCA(TreeNode root, int n1, int n2)
+        {
+         
+                if (root == null)return null;
+                if (root.val > n1  &&  root.val > n2)  return LCA(root.left, n1, n2);
+                if (root.val < n1  &&  root.val < n2)    return LCA(root.right, n1, n2);
+                return root;
         }
-
-        return root;
-    }
-
-    void inorder() {
-        inorderRec(root);
-    }
-
-    public void inorderRec(Node root) {
-        if (root == null) {
-            return;
-        }
-        inorderRec(root.left);
-        System.out.print(root.val + " ");
-        inorderRec(root.right);
-    }
-
-    public Node findLCA(Node node, int p, int q) {
-        if(node == null) {
-            return null;
-        }
-
-        // If both n1 and n2 are smaller than root, then LCA lies in left
-        if(node.val > p && node.val > q) {
-            return findLCA(node.left, p, q);
-        }
-
-        // If both p and q are greater than root, then LCA lies in right
-        if(node.val < p && node.val < q) {
-            return findLCA(node.right, p, q);
-        }
-
-        return node;
-    }
-
-}
-
+ //Diff Way
+// public TreeNode LCA(TreeNode root, int p, int q) 
+//         {
+//       int a =Math.min(p,q);
+//       int b= Math.max(p,q);
+//       return helper(root,a,b);       
+//     }
+//  public  TreeNode helper(TreeNode root,int l,int h)
+//   {
+//     if(root == null) return root;
+//     if(root.val < l) return helper(root.right,l,h);
+//     if(root.val > h) return helper(root.left,l,h);
+//     return root;
+//   }
+ }
 public class P08_LCAInBST {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int testCases = sc.nextInt();
-        while (testCases > 0) {
-            int p = sc.nextInt();
-            int q = sc.nextInt();
-
-            int n = sc.nextInt();
-            int[] arr = new int[n];
-            for (int i = 0; i < n; i++) {
-                arr[i] = sc.nextInt();
-            }
-
-            // Insertion in BST
-            BST tree = new BST();
-            for (int i = 0; i < n; i++) {
-                tree.insert(arr[i]);
-            }
-            Node t = tree.findLCA(tree.root, p, q);
-            System.out.print(t.val + " ");
-            testCases--;
+  public static Scanner sc = new Scanner(System.in);
+        public static TreeNode buildBST(){
+                
+                Queue<TreeNode> q = new LinkedList<>();
+                int h = sc.nextInt();
+                TreeNode root = null;
+                    if(h != -1)
+                    {
+                        root = new TreeNode(h);
+                        q.add(root);
+                    }
+                 
+                TreeNode mainRoot = root;
+                 
+                while(!q.isEmpty()) 
+                {
+                        TreeNode currRoot = q.peek(); 
+                            q.remove();
+                 
+                        int left = sc.nextInt();
+                        int right = sc.nextInt(); 
+                        if(left != -1) 
+                        {
+                            currRoot.left = new TreeNode(left);
+                            q.add(currRoot.left);
+                        }
+                        if(right != -1) 
+                        {
+                            currRoot.right = new TreeNode(right);
+                            q.add(currRoot.right);
+                        }
+                }
+                return mainRoot;
         }
-
-        
-        //tree.inorder();
-
-        sc.close();
-    }
+    public static void main(String[] args)
+        { 
+            BST  tree  = new BST();
+           int T = sc.nextInt();
+                while(T -- > 0)
+                {
+                        int a = sc.nextInt();
+                        int b = sc.nextInt();
+                        
+                        TreeNode root = buildBST();
+                        TreeNode temp = tree.LCA(root, a, b);
+                        if(temp != null)
+                                System.out.print(temp.val + " ");
+                        else
+                                System.out.print(-1 + " ");
+                    }
+        }
 }
