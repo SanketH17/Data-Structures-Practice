@@ -1,7 +1,8 @@
 package M4_BST;
 
-import java.util.*;
+/* */
 
+import java.util.*;
 
 class Node {
     int val;
@@ -40,32 +41,40 @@ class BST {
         return root;
     }
 
-    public static ArrayList<Integer> leftView(Node root) {
-        LinkedList<Node> que = new LinkedList<>();
-        que.addLast(root);
-        ArrayList<Integer> ans = new ArrayList<>();
-
-        while (que.size() != 0) {
-            int size = que.size();
-            ans.add(que.getFirst().val);
-            while (size-- > 0) {
-                Node rn = que.removeFirst(); // rn : remove Node
-
-                if (rn.left != null)
-                    que.addLast(rn.left);
-                if (rn.right != null)
-                    que.addLast(rn.right);
-            }
-        }
-        return ans;
+    void inorder() {
+        inorderRec(root);
     }
+
+    public void inorderRec(Node root) {
+        if (root == null) {
+            return;
+        }
+        inorderRec(root.left);
+        System.out.print(root.val + " ");
+        inorderRec(root.right);
+    }
+
 
 }
 
-public class P09_LeftViewBinaryTree {
+public class P10_SearchInBST {
+
+    public static Node searchRec(Node root, int val) {
+        if (root == null || root.val == val) {
+            return root;
+        }
+
+        if (root.val < val) {
+            return searchRec(root.right, val);
+        }
+        return searchRec(root.left, val);
+    }
+
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        int k = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
@@ -75,9 +84,7 @@ public class P09_LeftViewBinaryTree {
         for (int i = 0; i < n; i++) {
             tree.insert(arr[i]);
         }
-        ArrayList<Integer> ans = BST.leftView(tree.root);
-        for (Integer i : ans)
-            System.out.print(i + " ");
+        
         sc.close();
     }
 }
