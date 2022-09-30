@@ -40,7 +40,7 @@ class BST {
         return root;
     }
 
-    public static ArrayList<Integer> leftView(Node root) {
+    public ArrayList<Integer> leftView(Node root) {
         LinkedList<Node> que = new LinkedList<>();
         que.addLast(root);
         ArrayList<Integer> ans = new ArrayList<>();
@@ -75,7 +75,7 @@ public class P09_LeftViewBinaryTree {
         for (int i = 0; i < n; i++) {
             tree.insert(arr[i]);
         }
-        ArrayList<Integer> ans = BST.leftView(tree.root);
+        ArrayList<Integer> ans = tree.leftView(tree.root);
         for (Integer i : ans)
             System.out.print(i + " ");
         sc.close();

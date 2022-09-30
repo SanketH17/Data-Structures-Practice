@@ -1,90 +1,62 @@
 package M4_BST;
 
-/* */
 
 import java.util.*;
+import java.io.*;
 
-class Node {
-    int val;
-    Node left;
-    Node right;
+class node {
+    int data;
+    node left;
+    node right;
 
-    public Node(int key) {
-        val = key;
-        left = right = null;
+    node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
     }
-}
-
-class BST {
-    Node root;
-
-    public BST() {
-        root = null;
-    }
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
-        if (root == null) {
-            root = new Node(key);
-            return root;
-        }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
-        }
-
-        return root;
-    }
-
-    void inorder() {
-        inorderRec(root);
-    }
-
-    public void inorderRec(Node root) {
-        if (root == null) {
-            return;
-        }
-        inorderRec(root.left);
-        System.out.print(root.val + " ");
-        inorderRec(root.right);
-    }
-
-
 }
 
 public class P10_SearchInBST {
-
-    public static Node searchRec(Node root, int val) {
-        if (root == null || root.val == val) {
-            return root;
+    public static node insert(node root, int data) {
+        if (root == null) {
+            return new node(data);
         }
-
-        if (root.val < val) {
-            return searchRec(root.right, val);
+        if (root.data > data) {
+            root.left = insert(root.left, data);
         }
-        return searchRec(root.left, val);
+        if (root.data < data) {
+            root.right = insert(root.right, data);
+        }
+        return root;
     }
 
+    public static String search(node root, int data) {
+        if (root == null)
+            return "NO";
 
-    public static void main(String[] args) {
+        if (root.data == data) {
+            return "YES";
+        }
+        if (root.data > data) {
+            return search(root.left, data);
+        }
+        if (root.data < data) {
+            return search(root.right, data);
+        }
+        return "NO";
+    }
+
+    public static void main(String[] args) throws java.lang.Exception {
+        // your code here
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int k = sc.nextInt();
-        int[] arr = new int[n];
+        int data = sc.nextInt();
+        node root = null;
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            root = insert(root, sc.nextInt());
         }
+        System.out.print(search(root, data));
 
-        BST tree = new BST();
-        for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
-        }
-        
         sc.close();
     }
 }
