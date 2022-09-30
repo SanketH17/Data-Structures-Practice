@@ -2,14 +2,13 @@ package M4_BST;
 
 
 import java.util.*;
-import java.io.*;
 
-class node {
+class Node {
     int data;
-    node left;
-    node right;
+    Node left;
+    Node right;
 
-    node(int data) {
+    Node(int data) {
         this.data = data;
         this.left = null;
         this.right = null;
@@ -17,9 +16,9 @@ class node {
 }
 
 public class P10_SearchInBST {
-    public static node insert(node root, int data) {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            return new node(data);
+            return new Node(data);
         }
         if (root.data > data) {
             root.left = insert(root.left, data);
@@ -30,7 +29,7 @@ public class P10_SearchInBST {
         return root;
     }
 
-    public static String search(node root, int data) {
+    public static String search(Node root, int data) {
         if (root == null)
             return "NO";
 
@@ -51,7 +50,7 @@ public class P10_SearchInBST {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int data = sc.nextInt();
-        node root = null;
+        Node root = null;
         for (int i = 0; i < n; i++) {
             root = insert(root, sc.nextInt());
         }

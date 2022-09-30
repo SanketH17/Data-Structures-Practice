@@ -12,7 +12,7 @@ public class P17_LongestSubsequenceWithDiffOne {
             arr[i] = sc.nextInt();
         }
 
-        
+        sc.close();
 
     }
 }
