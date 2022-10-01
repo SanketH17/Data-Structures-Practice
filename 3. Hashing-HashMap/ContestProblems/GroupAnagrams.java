@@ -1,10 +1,25 @@
 package ContestProblems;
 
-
-
-/*GroupAnagrams */
-
 import java.util.*;
+
+/*
+
+Input:
+6
+eat tea tan ate nat bat
+
+Output :
+eat tea ate 
+bat 
+tan nat 
+
+or 
+
+bat
+nat tan
+ate eat tea
+
+*/
 
 public class GroupAnagrams {
     public static void main(String[] args) throws java.lang.Exception {
@@ -16,6 +31,7 @@ public class GroupAnagrams {
             strs[i] = sc.next();
         }
         List<List<String>> ans = groupAnagrams(strs);
+
         for (List<String> l : ans) {
             for (String s : l) {
                 System.out.print(s + " ");
@@ -37,8 +53,7 @@ public class GroupAnagrams {
             String temp = new String(arr);
 
             if (hm.containsKey(temp)) {
-                // if key contains in the hashmap already
-                // push it at the end of list
+                // if key contains in the hashmap already -> push it at the end of list
                 hm.get(temp).add(s);
             } else {
                 List<String> list = new ArrayList<>();
