@@ -3,7 +3,6 @@ package M1_Hashing1;
 import java.util.*;;
 
 /*
-
 Input: 5 
 1 4 2 5 2  -> Range of numbers (1 - n)
 Output: 2 3
