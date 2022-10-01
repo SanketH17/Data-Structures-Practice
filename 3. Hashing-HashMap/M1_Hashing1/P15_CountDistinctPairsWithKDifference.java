@@ -52,7 +52,7 @@ public class P15_CountDistinctPairsWithKDifference {
         // Set :         5 3 4 2 6 1
         // complement :  8 6 7 5 9 4 
 
-        // case 2 : 
+        // case 2 : k > 0
         else {
             HashSet<Integer> comp = new HashSet<>();
             for(int i = 0; i < n; i++) {
