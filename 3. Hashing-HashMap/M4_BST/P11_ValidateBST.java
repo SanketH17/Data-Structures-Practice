@@ -4,12 +4,12 @@ import java.util.*;
 
 /* code is running perfectly on gdb */
 
-class node {
+class Node {
     int data;
-    node left;
-    node right;
+    Node left;
+    Node right;
 
-    node(int data) {
+    Node(int data) {
         this.data = data;
         this.left = null;
         this.right = null;
@@ -19,34 +19,39 @@ class node {
 public class P11_ValidateBST {
     public static Scanner sc = new Scanner(System.in);
 
-    public static node buildTree() {
-        Queue<node> q = new LinkedList<>();
+    public static Node buildTree() {
+        Queue<Node> q = new LinkedList<>();
         int data = sc.nextInt();
-        node root = null;
+        Node root = null;
+        
+        // Insert root element in the queue
         if (data != -1) {
-            root = new node(data);
-            q.offer(root);
+            root = new Node(data);
+            q.offer(root); // It is used to insert the specified element into the queue.
         }
+
+        // Iterate till queue is not empty
         while (!q.isEmpty()) {
-            node temp = q.poll();
+            Node temp = q.poll(); // It is used to retrieves and removes the head of this queue, or returns null
+                                  // if this queue is empty.
             int left = sc.nextInt();
             int right = sc.nextInt();
             if (left != -1) {
-                temp.left = new node(left);
+                temp.left = new Node(left);
                 q.offer(temp.left);
             }
 
             if (right != -1) {
-                temp.right = new node(right);
+                temp.right = new Node(right);
                 q.offer(temp.right);
             }
         }
         return root;
     }
 
-    static node temp = null;
+    static Node temp = null;
 
-    public static boolean validate(node root, int min, int max) {
+    public static boolean validate(Node root, int min, int max) {
         if (root == null) {
             return true;
         }
@@ -62,7 +67,7 @@ public class P11_ValidateBST {
         // your code here
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
-            node root = null;
+            Node root = null;
             root = buildTree();
             boolean ans = false;
             ans = validate(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
