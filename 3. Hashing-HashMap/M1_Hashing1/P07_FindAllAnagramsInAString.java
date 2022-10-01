@@ -2,6 +2,18 @@ package M1_Hashing1;
 
 import java.util.*;
 
+/*
+Sample Input 1
+10
+cbaebabacd
+3
+abc
+Sample Output 1
+0 6
+
+Output:
+Print all the starting indexes p's anagram in s in sorted order
+*/
 public class P07_FindAllAnagramsInAString {
 
     public static void findAnagrams(String s, String p) {
@@ -49,9 +61,9 @@ public class P07_FindAllAnagramsInAString {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-       // int n = sc.nextInt();
+        int n = sc.nextInt();
         String s = sc.next();
-        //int m = sc.nextInt();
+        int m = sc.nextInt();
         String p = sc.next();
 
         findAnagrams(s, p);
