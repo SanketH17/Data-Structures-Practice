@@ -2,6 +2,19 @@ package M1_Hashing1;
 
 import java.util.*;
 
+
+/*
+Given an integer array and a non-negative integer k, count all distinct pairs with difference equal to k,
+i.e., A[ i ] - A[ j ] = k
+
+Sample Input:
+5 0
+1 5 4 1 2
+Sample Output:
+1
+*/
+
+
 public class P15_CountDistinctPairsWithKDifference {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
