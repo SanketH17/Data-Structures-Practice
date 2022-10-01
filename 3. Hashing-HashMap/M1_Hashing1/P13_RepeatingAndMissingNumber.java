@@ -2,6 +2,15 @@ package M1_Hashing1;
 
 import java.util.*;;
 
+/*
+
+Input: 5 
+1 4 2 5 2  -> Range of numbers (1 - n)
+Output: 2 3
+2 -> repeating
+3 -> missing
+*/
+
 public class P13_RepeatingAndMissingNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
