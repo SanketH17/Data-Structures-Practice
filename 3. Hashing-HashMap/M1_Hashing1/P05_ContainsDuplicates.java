@@ -26,7 +26,5 @@ public class P05_ContainsDuplicates {
             }
         }
         System.out.println("false");
-       
-
     }
 }
