@@ -15,13 +15,7 @@ public class P05_ContainsDuplicates {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for(int val : arr) {
-            if(map.containsKey(val)) {
-                int of = map.get(val);
-                int nf = of + 1;
-                map.put(val, nf);
-            } else {
-                map.put(val, 1);
-            }
+            map.put(val, map.getOrDefault(val, 0) + 1);
         }
 
 
