@@ -29,7 +29,6 @@ public class P04_MostFrequentWordInTheArray {
                 maxFreq = fmap.get(word);
             }
         }
-
         System.out.println(ans);
         sc.close();
     }
