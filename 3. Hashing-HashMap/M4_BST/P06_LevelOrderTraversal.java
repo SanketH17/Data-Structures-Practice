@@ -1,6 +1,5 @@
 package M4_BST;
 
-
 import java.util.*;
 
 class Node {
@@ -14,69 +13,51 @@ class Node {
     }
 }
 
-class BST {
-    Node root;
-
-    public BST() {
-        root = null;
-    }
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
+public class P06_LevelOrderTraversal {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            root = new Node(key);
-            return root;
+            return new Node(data);
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+        if (root.val > data) {
+            root.left = insert(root.left, data);
         }
-
+        if (root.val < data) {
+            root.right = insert(root.right, data);
+        }
         return root;
     }
 
-    void LevelOrder() {
+    public static void LevelOrder(Node root) {
         Queue<Node> q = new LinkedList<>();
         q.add(root);
 
         while (!q.isEmpty()) {
-            // 1. Take front node from queue and print 
-            Node tempNode = q.poll(); //poll() removes the present head
+            // 1. Take front node from queue and print
+            Node tempNode = q.poll(); // poll() removes the present head
             System.out.print(tempNode.val + " ");
 
             // 2. Enqueue the left child
-            if(tempNode.left != null) {
+            if (tempNode.left != null) {
                 q.add(tempNode.left);
             }
 
             // 3. Enqueu the right child
-            if(tempNode.right != null) {
+            if (tempNode.right != null) {
                 q.add(tempNode.right);
             }
         }
     }
 
-}
-
-public class P06_LevelOrderTraversal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
 
-        BST tree = new BST();
+        int n = sc.nextInt();
+
+        Node root = null;
         for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
+            root = insert(root, sc.nextInt());
         }
-        tree.LevelOrder();
+        LevelOrder(root);
         sc.close();
     }
 }
