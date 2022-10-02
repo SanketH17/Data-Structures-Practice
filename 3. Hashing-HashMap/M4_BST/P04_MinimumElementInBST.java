@@ -1,8 +1,5 @@
 package M4_BST;
 
-
-
-
 import java.util.*;
 
 class Node {
@@ -16,62 +13,39 @@ class Node {
     }
 }
 
-class BST {
-    Node root;
-
-    public BST() {
-        root = null;
-    }
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
+public class P04_MinimumElementInBST {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            root = new Node(key);
-            return root;
+            return new Node(data);
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+        if (root.val > data) {
+            root.left = insert(root.left, data);
         }
-
+        if (root.val < data) {
+            root.right = insert(root.right, data);
+        }
         return root;
     }
 
-    public int MinValueInBST(Node root) {
-        if(root == null) {
+    public static int MinValueInBST(Node root) {
+        if (root == null) {
             return -1;
         }
-        while(root.left != null) {
+        while (root.left != null) {
             root = root.left;
         }
         return root.val;
     }
 
-
-}
-
-public class P04_MinimumElementInBST {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] arr = new int[n];
+        Node root = null;
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            root = insert(root, sc.nextInt());
         }
-
-        BST tree = new BST();
-        for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
-        }
-        int min = tree.MinValueInBST(tree.root);
-        System.out.println(min);
-
+        int ans = MinValueInBST(root);
+        System.out.println(ans);
         sc.close();
     }
 }
-
