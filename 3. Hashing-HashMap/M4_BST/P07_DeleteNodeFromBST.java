@@ -1,6 +1,5 @@
 package M4_BST;
 
-
 import java.util.*;
 
 class Node {
@@ -14,53 +13,30 @@ class Node {
     }
 }
 
-class BST {
-    Node root;
-
-    public BST() {
-        root = null;
-    }
-    /*________________________________________________________________________________________________________________*/
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
+public class P07_DeleteNodeFromBST {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            root = new Node(key);
-            return root;
+            return new Node(data);
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+        if (root.val > data) {
+            root.left = insert(root.left, data);
         }
-
+        if (root.val < data) {
+            root.right = insert(root.right, data);
+        }
         return root;
     }
-    /*________________________________________________________________________________________________________________*/
 
-    void preOrder() {
-        preOrderRec(root);
-    }
-
-    public void preOrderRec(Node root) {
-        if (root == null) {
-            return;
+    public static int minValue(Node root) {
+        int minv = root.val;
+        while (root.left != null) {
+            minv = root.left.val;
+            root = root.left;
         }
-        System.out.print(root.val + " ");
-        preOrderRec(root.left);
-        preOrderRec(root.right);
+        return minv;
     }
 
-    /*________________________________________________________________________________________________________________*/
-    public void deleteNode(int val) {
-        root = deleteNodeRec(root, val);
-    }
-
-    public Node deleteNodeRec(Node root, int val) {
+    public static Node deleteNodeRec(Node root, int val) {
         if (root == null) {
             return root;
         }
@@ -94,34 +70,27 @@ class BST {
         return root;
     }
 
-    public static int minValue(Node root) {
-        int minv = root.val;
-        while (root.left != null) {
-            minv = root.left.val;
-            root = root.left;
+    public static void preOrder(Node root) {
+        if (root == null) {
+            return;
         }
-        return minv;
+        System.out.print(root.val + " ");
+        preOrder(root.left);
+        preOrder(root.right);
     }
 
-}
-
-public class P07_DeleteNodeFromBST {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         int n = sc.nextInt();
-        int k = sc.nextInt();
-        int[] arr = new int[n];
+        int data = sc.nextInt();
+        Node root = null;
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            root = insert(root, sc.nextInt());
         }
 
-        BST tree = new BST();
-        for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
-        }
-        tree.deleteNode(k);
-        tree.preOrder();
-
+        deleteNodeRec(root, data);
+        preOrder(root);
         sc.close();
     }
 }
