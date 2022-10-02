@@ -1,6 +1,5 @@
 package M4_BST;
 
-
 import java.util.*;
 
 class Node {
@@ -14,93 +13,37 @@ class Node {
     }
 }
 
-
-class BST {
-    Node root;
-
-    public BST() {
-        root = null;
-    }
-/*___________________________________________________________________________________________________________________*/
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-    public Node insertRec(Node root, int key) {
+public class P03_PostOrderTraversal {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            root = new Node(key);
-            return root;
+            return new Node(data);
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+        if (root.val > data) {
+            root.left = insert(root.left, data);
         }
-
+        if (root.val < data) {
+            root.right = insert(root.right, data);
+        }
         return root;
     }
-/*___________________________________________________________________________________________________________________*/
-    void inorder() {
-        inorderRec(root);
-    }
 
-    public void inorderRec(Node root) {
+    public static void postOrder(Node root) {
         if (root == null) {
             return;
         }
-        inorderRec(root.left);
-        System.out.print(root.val + " ");
-        inorderRec(root.right);
-    }
-/*___________________________________________________________________________________________________________________*/
-    void preOrder() {
-        preOrderRec(root);
-    }
-
-    public void preOrderRec(Node root) {
-        if(root == null) {
-            return;
-        }
-        System.out.print(root.val + " ");
-        preOrderRec(root.left);
-        preOrderRec(root.right);
-    }
-/*___________________________________________________________________________________________________________________*/
-    void postOrder() {
-        postOrderRec(root);
-    }
-
-    public void postOrderRec(Node root) {
-        if(root == null) {
-            return;
-        }
-        postOrderRec(root.left);
-        postOrderRec(root.right);
+        postOrder(root.left);
+        postOrder(root.right);
         System.out.print(root.val + " ");
     }
-/*___________________________________________________________________________________________________________________*/
 
-
-}
-
-
-
-public class P03_PostOrderTraversal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] arr = new int[n];
+        Node root = null;
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            root = insert(root, sc.nextInt());
         }
-
-        BST tree = new BST();
-        for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
-        }
-        tree.postOrder();
+        postOrder(root);
         sc.close();
     }
 }
-
