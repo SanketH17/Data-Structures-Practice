@@ -1,6 +1,5 @@
 package M4_BST;
 
-
 import java.util.*;
 
 class Node {
@@ -12,64 +11,43 @@ class Node {
         val = key;
         left = right = null;
     }
+
 }
 
-class BST {
-    Node root;
 
-    public BST() {
-        root = null;
-    }
+public class P01_ConstructionBST {
 
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            root = new Node(key);
-            return root;
+            return new Node(data);
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+        if (root.val > data) {
+            root.left = insert(root.left, data);
         }
-
+        if (root.val < data) {
+            root.right = insert(root.right, data);
+        }
         return root;
     }
 
-    void inorder() {
-        inorderRec(root);
-    }
-
-    public void inorderRec(Node root) {
+    public static void inorder(Node root) {
         if (root == null) {
             return;
         }
-        inorderRec(root.left);
+        inorder(root.left);
         System.out.print(root.val + " ");
-        inorderRec(root.right);
+        inorder(root.right);
     }
 
-}
-
-public class P01_ConstructionBST {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int[] arr = new int[n];
+        Node root = null;
         for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            root = insert(root, sc.nextInt());
         }
-
-        BST tree = new BST();
-        for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
-        }
-        tree.inorder();
-
+        inorder(root);
         sc.close();
+        
     }
 }
