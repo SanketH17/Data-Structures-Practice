@@ -14,7 +14,6 @@ class Node {
 
 }
 
-
 public class P01_ConstructionBST {
 
     public static Node insert(Node root, int data) {
@@ -48,6 +47,6 @@ public class P01_ConstructionBST {
         }
         inorder(root);
         sc.close();
-        
+
     }
 }
