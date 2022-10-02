@@ -93,6 +93,7 @@ public class P08_LCAInBST {
                 System.out.print(temp.val + " ");
             else
                 System.out.print(-1 + " ");
+            System.out.println();
         }
     }
 }
