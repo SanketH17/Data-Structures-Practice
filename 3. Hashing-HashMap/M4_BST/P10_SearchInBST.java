@@ -55,7 +55,6 @@ public class P10_SearchInBST {
             root = insert(root, sc.nextInt());
         }
         System.out.print(search(root, data));
-
         sc.close();
     }
 }
