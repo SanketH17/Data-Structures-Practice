@@ -2,7 +2,6 @@ package M4_BST;
 
 import java.util.*;
 
-
 class Node {
     int val;
     Node left;
@@ -14,33 +13,21 @@ class Node {
     }
 }
 
-class BST {
-    Node root;
-
-    public BST() {
-        root = null;
-    }
-
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
-
-    public Node insertRec(Node root, int key) {
+public class P09_LeftViewBinaryTree {
+    public static Node insert(Node root, int data) {
         if (root == null) {
-            root = new Node(key);
-            return root;
+            return new Node(data);
         }
-
-        else if (key < root.val) {
-            root.left = insertRec(root.left, key);
-        } else if (key > root.val) {
-            root.right = insertRec(root.right, key);
+        if (root.val > data) {
+            root.left = insert(root.left, data);
         }
-
+        if (root.val < data) {
+            root.right = insert(root.right, data);
+        }
         return root;
     }
 
-    public ArrayList<Integer> leftView(Node root) {
+    public static ArrayList<Integer> leftView(Node root) {
         LinkedList<Node> que = new LinkedList<>();
         que.addLast(root);
         ArrayList<Integer> ans = new ArrayList<>();
@@ -60,24 +47,19 @@ class BST {
         return ans;
     }
 
-}
-
-public class P09_LeftViewBinaryTree {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
 
-        BST tree = new BST();
+        int n = sc.nextInt();
+        Node root = null;
         for (int i = 0; i < n; i++) {
-            tree.insert(arr[i]);
+            root = insert(root, sc.nextInt());
         }
-        ArrayList<Integer> ans = tree.leftView(tree.root);
-        for (Integer i : ans)
+        ArrayList<Integer> ans = leftView(root);
+        for (Integer i : ans) {
             System.out.print(i + " ");
+        }
+            
         sc.close();
     }
 }
