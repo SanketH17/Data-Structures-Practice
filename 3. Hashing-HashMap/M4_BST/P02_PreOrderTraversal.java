@@ -45,6 +45,5 @@ public class P02_PreOrderTraversal {
         }
         preOrder(root);
         sc.close();
-
     }
 }
