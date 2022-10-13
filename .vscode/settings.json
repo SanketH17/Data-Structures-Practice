@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "2. Extra Problems - LinkedList, Stack, Queue, Binary Search",
         "3. Hashing-HashMap",
-        "PepCoding_DSA"
+        "PepCoding_DSA",
+        "1. Extra Problems - Arrays, Strings, Recursion"
     ],
     "git.ignoreLimitWarning": true
 }
