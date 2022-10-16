@@ -1,4 +1,4 @@
-package ProblemSolving.M6_2DMatrix;
+package M6_2DMatrix;
 
 import java.util.*;
 
