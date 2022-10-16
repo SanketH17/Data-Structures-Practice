@@ -1,5 +1,4 @@
-package ProblemSolving.M2_Loops_and_Arrays.Arrays;
-
+package M2_Loops_and_Arrays.Arrays;
 
 public class p07_ArmStrongNumbers {
     public static void main(String[] args) {

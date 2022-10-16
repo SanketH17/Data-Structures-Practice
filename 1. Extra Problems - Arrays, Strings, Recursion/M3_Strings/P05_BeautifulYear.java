@@ -1,4 +1,4 @@
-package ProblemSolving.M3_Strings;
+package M3_Strings;
 
 import java.util.*;
 

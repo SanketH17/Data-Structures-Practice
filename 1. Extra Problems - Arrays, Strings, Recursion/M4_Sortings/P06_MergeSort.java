@@ -1,4 +1,4 @@
-package ProblemSolving.M4_Sortings;
+package M4_Sortings;
 
 import java.util.*;
 

@@ -1,5 +1,4 @@
-package ProblemSolving.M2_Loops_and_Arrays.Arrays;
-
+package M2_Loops_and_Arrays.Arrays;
 import java.util.*;
 
 public class p05_SumofArrayExceptSelf {
