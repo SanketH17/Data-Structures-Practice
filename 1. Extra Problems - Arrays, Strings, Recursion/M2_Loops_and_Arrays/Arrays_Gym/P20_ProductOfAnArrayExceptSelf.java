@@ -1,4 +1,4 @@
-package ProblemSolving.M2_Loops_and_Arrays.Arrays_Gym;
+package M2_Loops_and_Arrays.Arrays_Gym;
 
 /*
 

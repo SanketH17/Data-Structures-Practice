@@ -1,4 +1,4 @@
-package ProblemSolving.M1_Conditionals;
+package M1_Conditionals;
 
 import java.util.*;
 /*
