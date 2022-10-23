@@ -24,7 +24,7 @@ public class P03_SmallerThanTripletSum {
     }
 
     public static int findTriplets(int[] arr, int n, int target) {
-        int count = 0, start = 0, end = 0, sum = 0, ans = 0;
+        int count = 0, start = 0, sum = 0;
 
         for(int i = 0; i < n; i++) {
             sum += arr[i];
